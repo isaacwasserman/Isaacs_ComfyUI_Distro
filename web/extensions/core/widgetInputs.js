@@ -256,18 +256,8 @@ export function mergeIfValid(output, config2, forceUpdate, recreateWidget, confi
 	return { customConfig };
 }
 
-let useConversionSubmenusSetting;
 app.registerExtension({
 	name: "Comfy.WidgetInputs",
-	init() {
-		useConversionSubmenusSetting = app.ui.settings.addSetting({
-			id: "Comfy.NodeInputConversionSubmenus",
-			name: "Node widget/input conversion sub-menus",
-			tooltip: "In the node context menu, place the entries that convert between input/widget in sub-menus.",
-			type: "boolean",
-			defaultValue: true,
-		});
-	},
 	async beforeRegisterNodeDef(nodeType, nodeData, app) {
 		// Add menu options to conver to/from widgets
 		const origGetExtraMenuOptions = nodeType.prototype.getExtraMenuOptions;
@@ -305,28 +295,20 @@ app.registerExtension({
 				
 				//Convert.. main menu
 				if (toInput.length) {
-					if (useConversionSubmenusSetting.value) {
-						options.push({
-							content: "Convert Widget to Input",
-							submenu: {
-								options: toInput,
-							},
-						});
-					} else {
-						options.push(...toInput, null);
-					}
+					options.push({
+						content: `Convert input to 🔘..`,
+						submenu: {
+							options: toInput,
+						},
+					});
 				}
 				if (toWidget.length) {
-					if (useConversionSubmenusSetting.value) {
-						options.push({
-							content: "Convert Input to Widget",
-							submenu: {
-								options: toWidget,
-							},
-						});
-					} else {
-						options.push(...toWidget, null);
-					}
+					options.push({
+						content: `Convert 🔘 to widget..`,
+						submenu: {
+							options: toWidget,
+						},
+					});
 				}
 			}
 

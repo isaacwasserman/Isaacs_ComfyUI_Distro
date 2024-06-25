@@ -1,0 +1,108 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-06-25 21:24] ** ComfyUI startup time: 2024-06-25 21:24:00.295960
+[2024-06-25 21:24] ** Platform: Linux
+[2024-06-25 21:24] ** Python version: 3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:45:18) [GCC 12.3.0]
+[2024-06-25 21:24] ** Python executable: /opt/micromamba/envs/comfyui/bin/python
+[2024-06-25 21:24] ** Log path: /workspace/ComfyUI/comfyui.log
+[2024-06-25 21:24] 
+Prestartup times for custom nodes:
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-25 21:24]    0.5 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-25 21:24] 
+Total VRAM 7971 MB, total RAM 64226 MB
+[2024-06-25 21:24] xformers version: 0.0.25.post1
+[2024-06-25 21:24] Set vram state to: NORMAL_VRAM
+[2024-06-25 21:24] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-25 21:24] VAE dtype: torch.bfloat16
+[2024-06-25 21:24] Using xformers cross attention
+[2024-06-25 21:24] ### Loading: ComfyUI-Manager (V2.42)
+[2024-06-25 21:24] ### ComfyUI Revision: 2284 [69d710e4] | Released on '2024-06-25'
+[2024-06-25 21:24] ### Loading: ComfyUI-Impact-Pack (V5.18.1)
+[2024-06-25 21:24] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-06-25 21:24] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-06-25 21:24] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-06-25 21:24] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-06-25 21:24] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-06-25 21:24] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-06-25 21:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-25 21:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-25 21:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-25 21:24] [Impact Pack] Wildcards loading done.
+[2024-06-25 21:24] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-25 21:24] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/workspace/ComfyUI/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-25 21:24] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-06-25 21:24] 
+	[3m[93m"Your time is now. Start where you are and never stop."[0m[3m - Roy T. Bennett[0m
+[2024-06-25 21:24] 
+[2024-06-25 21:24] Adding /workspace/ComfyUI/custom_nodes to sys.path
+[2024-06-25 21:24] Could not find efficiency nodes
+[2024-06-25 21:24] Loaded ControlNetPreprocessors nodes from /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-25 21:24] Could not find AdvancedControlNet nodes
+[2024-06-25 21:24] Could not find AnimateDiff nodes
+[2024-06-25 21:24] Loaded IPAdapter nodes from /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-25 21:24] Could not find VideoHelperSuite nodes
+[2024-06-25 21:24] ### Loading: ComfyUI-Impact-Pack (V5.18.1)
+[2024-06-25 21:24] Loaded ImpactPack nodes from /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-25 21:24] [Impact Pack] Wildcards loading done.
+[2024-06-25 21:24] Web extensions folder found at /workspace/ComfyUI/web/extensions/ComfyLiterals
+[2024-06-25 21:24] 
+[2024-06-25 21:24] [92m[rgthree] Loaded 40 epic nodes.[0m
+[2024-06-25 21:24] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-25 21:24] 
+[2024-06-25 21:24] Total VRAM 7971 MB, total RAM 64226 MB
+[2024-06-25 21:24] xformers version: 0.0.25.post1
+[2024-06-25 21:24] Set vram state to: NORMAL_VRAM
+[2024-06-25 21:24] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-25 21:24] VAE dtype: torch.bfloat16
+[2024-06-25 21:24] 
+Import times for custom nodes:
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Logic
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/cg-use-everywhere
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-YOLO
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyLiterals
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfy-nodes
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-IC-Light
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_essentials
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Shinsplat
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-various
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-fitsize
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-25 21:24]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-25 21:24]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-art-venture
+[2024-06-25 21:24]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_segment_anything
+[2024-06-25 21:24]    0.6 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-25 21:24]    0.7 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-SUPIR
+[2024-06-25 21:24]    0.8 seconds: /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui
+[2024-06-25 21:24] 
+[2024-06-25 21:24] Starting server
+
+[2024-06-25 21:24] To see the GUI go to: http://127.0.0.1:18188
+[2024-06-25 21:24] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-25 21:27] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json [DONE]
+[2024-06-25 21:27] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json [DONE]
+[2024-06-25 21:27] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/746607195_github-stats.json [DONE]
+[2024-06-25 21:28] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json [DONE]
+[2024-06-25 21:28] FETCH DATA from: https://github.com/ltdrdata/ComfyUI-Manager/raw/main/custom-node-list.json/custom-node-list.json[ComfyUI-Manager] Due to a network error, switching to local mode.
+=> custom-node-list.json
+=> Expecting value: line 7 column 1 (char 6)
+[2024-06-25 21:28] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json [DONE]
+[2024-06-25 21:28] Install custom node 'pants'
+[2024-06-25 21:28] Install: ['https://github.com/pants007/comfy-pants']
+[2024-06-25 21:28] Download: git clone 'https://github.com/pants007/comfy-pants'
+[2024-06-25 21:28] 0it [00:00, ?it/s]100%|██████████| 25.0/25.0 [00:00<00:00, 44.27it/s]100%|██████████| 25.0/25.0 [00:00<00:00, 44.26it/s]100%|██████████| 19.0/19.0 [00:00<00:00, 33.53it/s]100%|██████████| 19.0/19.0 [00:00<00:00, 33.53it/s]100%|██████████| 25.0/25.0 [00:00<00:00, 43.95it/s]100%|██████████| 25.0/25.0 [00:00<00:00, 43.94it/s]100%|██████████| 9.0/9.0 [00:00<00:00, 15.80it/s]100%|██████████| 9.0/9.0 [00:00<00:00, 15.79it/s]100%|██████████| 9.0/9.0 [00:00<00:00, 12.60it/s]
+[2024-06-25 21:28] Install: pip packages
+[2024-06-25 21:28] 
+## ComfyUI-Manager: EXECUTE => ['/opt/micromamba/envs/comfyui/bin/python', '-m', 'pip', 'install', 'clip-interrogator==0.6.0']
+[2024-06-25 21:28]  Collecting clip-interrogator==0.6.0
+[2024-06-25 21:28]    Downloading clip_interrogator-0.6.0-py3-none-any.whl.metadata (4.9 kB)
+[2024-06-25 21:28]                                   Downloading clip_interrogator-0.6.0-py3-none-any.whl (787 kB)
+[2024-06-25 21:28]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 787.8/787.8 kB 3.4 MB/s eta 0:00:00
+[2024-06-25 21:28]  Installing collected packages: clip-interrogator
+[2024-06-25 21:28]  Successfully installed clip-interrogator-0.6.0
+[2024-06-25 21:28] Installation was successful.
+[2024-06-25 21:28] After restarting ComfyUI, please refresh the browser.

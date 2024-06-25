@@ -1,0 +1,543 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-06-25 21:28] ** ComfyUI startup time: 2024-06-25 21:28:22.295088
+[2024-06-25 21:28] ** Platform: Linux
+[2024-06-25 21:28] ** Python version: 3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:45:18) [GCC 12.3.0]
+[2024-06-25 21:28] ** Python executable: /opt/micromamba/envs/comfyui/bin/python
+[2024-06-25 21:28] ** Log path: /workspace/ComfyUI/comfyui.log
+[2024-06-25 21:28] 
+Prestartup times for custom nodes:
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-25 21:28]    0.5 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-25 21:28] 
+Total VRAM 7971 MB, total RAM 64226 MB
+[2024-06-25 21:28] xformers version: 0.0.25.post1
+[2024-06-25 21:28] Set vram state to: NORMAL_VRAM
+[2024-06-25 21:28] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-25 21:28] VAE dtype: torch.bfloat16
+[2024-06-25 21:28] Using xformers cross attention
+[2024-06-25 21:28] ### Loading: ComfyUI-Manager (V2.42)
+[2024-06-25 21:28] ### ComfyUI Revision: 2284 [69d710e4] | Released on '2024-06-25'
+[2024-06-25 21:28] ### Loading: ComfyUI-Impact-Pack (V5.18.1)
+[2024-06-25 21:28] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-06-25 21:28] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-06-25 21:28] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-06-25 21:28] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-06-25 21:28] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-06-25 21:28] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-06-25 21:28] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-25 21:28] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-25 21:28] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-25 21:28] [Impact Pack] Wildcards loading done.
+[2024-06-25 21:28] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-25 21:28] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/workspace/ComfyUI/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-25 21:28] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-06-25 21:28] 
+	[3m[93m"Opportunities don't happen. You create them."[0m[3m - Chris Grosser[0m
+[2024-06-25 21:28] 
+[2024-06-25 21:28] Adding /workspace/ComfyUI/custom_nodes to sys.path
+[2024-06-25 21:28] Could not find efficiency nodes
+[2024-06-25 21:28] Loaded ControlNetPreprocessors nodes from /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-25 21:28] Could not find AdvancedControlNet nodes
+[2024-06-25 21:28] Could not find AnimateDiff nodes
+[2024-06-25 21:28] Loaded IPAdapter nodes from /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-25 21:28] Could not find VideoHelperSuite nodes
+[2024-06-25 21:28] ### Loading: ComfyUI-Impact-Pack (V5.18.1)
+[2024-06-25 21:28] Loaded ImpactPack nodes from /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-25 21:28] [Impact Pack] Wildcards loading done.
+[2024-06-25 21:28] Web extensions folder found at /workspace/ComfyUI/web/extensions/ComfyLiterals
+[2024-06-25 21:28] 
+[2024-06-25 21:28] [92m[rgthree] Loaded 40 exciting nodes.[0m
+[2024-06-25 21:28] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-25 21:28] 
+[2024-06-25 21:28] Total VRAM 7971 MB, total RAM 64226 MB
+[2024-06-25 21:28] xformers version: 0.0.25.post1
+[2024-06-25 21:28] Set vram state to: NORMAL_VRAM
+[2024-06-25 21:28] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-25 21:28] VAE dtype: torch.bfloat16
+[2024-06-25 21:28] 
+Import times for custom nodes:
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Logic
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/cg-use-everywhere
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-YOLO
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyLiterals
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-fitsize
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfy-nodes
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-IC-Light
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_essentials
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Shinsplat
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-various
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfy-pants
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-25 21:28]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-25 21:28]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_segment_anything
+[2024-06-25 21:28]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-art-venture
+[2024-06-25 21:28]    0.6 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-25 21:28]    0.7 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-SUPIR
+[2024-06-25 21:28]    0.8 seconds: /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui
+[2024-06-25 21:28] 
+[2024-06-25 21:28] Starting server
+
+[2024-06-25 21:28] To see the GUI go to: http://127.0.0.1:18188
+[2024-06-25 21:28] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-25 21:29] got prompt
+[2024-06-25 21:29] Failed to validate prompt for output 90:
+[2024-06-25 21:29] * (prompt):
+[2024-06-25 21:29]   - Required input is missing: images
+[2024-06-25 21:29] * SaveImage 90:
+[2024-06-25 21:29]   - Required input is missing: images
+[2024-06-25 21:29] Output will be ignored
+[2024-06-25 21:29] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:29] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
+[2024-06-25 21:29] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
+[2024-06-25 21:29] python node runs
+[2024-06-25 21:29] [1m[34m[CivitAI] [0mLoading Checkpoint: realisticVisionV60B1_v51HyperInpaintVAE.safetensors (https://civitai.com/models/4201/?modelVersionId=418955)
+[2024-06-25 21:29] [1m[34m[CivitAI] [0mCheckpoint SHA256: CB372C879506C865B000BAA3944CC8A4C7E8E3248D2150634989E9F9B6448AA4
+[2024-06-25 21:29] [1m[34m[CivitAI] [0mLoading Checkpoint from disk: /workspace/ComfyUI/models/checkpoints/realisticVisionV60B1_v51HyperInpaintVAE.safetensors
+[2024-06-25 21:29] model_type EPS
+[2024-06-25 21:29] Using xformers attention in VAE
+[2024-06-25 21:29] Using xformers attention in VAE
+[2024-06-25 21:29] clip missing: ['clip_l.logit_scale', 'clip_l.transformer.text_projection.weight']
+[2024-06-25 21:29] Requested to load SD1ClipModel
+[2024-06-25 21:29] Loading 1 new model
+[2024-06-25 21:29] using extra model: /workspace/ComfyUI/models/sams/sam_vit_b_01ec64.pth
+[2024-06-25 21:29] final text_encoder_type: bert-base-uncased
+[2024-06-25 21:29] /opt/micromamba/envs/comfyui/lib/python3.10/site-packages/transformers/modeling_utils.py:977: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+[2024-06-25 21:29] Requested to load AutoencoderKL
+[2024-06-25 21:29] Loading 1 new model
+[2024-06-25 21:30] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:30] Requested to load BaseModel
+[2024-06-25 21:30] Loading 1 new model
+[2024-06-25 21:30] 100%|██████████| 30/30 [00:02<00:00, 12.67it/s]
+[2024-06-25 21:30] Canva size: 1024x1024
+[2024-06-25 21:30] Image size: 512x512
+[2024-06-25 21:30] Scale factor: 2
+[2024-06-25 21:30] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:30] Tile size: 512x512
+[2024-06-25 21:30] Tiles amount: 4
+[2024-06-25 21:30] Grid: 2x2
+[2024-06-25 21:30] Redraw enabled: True
+[2024-06-25 21:30] Seams fix mode: NONE
+[2024-06-25 21:30] 100%|██████████| 20/20 [00:01<00:00, 10.23it/s]
+[2024-06-25 21:30] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:30] 100%|██████████| 20/20 [00:01<00:00, 10.41it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:30] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:30] Restoring logging level to 20
+[2024-06-25 21:30] Prompt executed in 22.07 seconds
+[2024-06-25 21:30] Error handling request
+Traceback (most recent call last):
+  File "/opt/micromamba/envs/comfyui/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 452, in _handle_request
+    resp = await request_handler(request)
+  File "/opt/micromamba/envs/comfyui/lib/python3.10/site-packages/aiohttp/web_app.py", line 543, in _handle
+    resp = await handler(request)
+  File "/opt/micromamba/envs/comfyui/lib/python3.10/site-packages/aiohttp/web_middlewares.py", line 114, in impl
+    return await handler(request)
+  File "/workspace/ComfyUI/server.py", line 41, in cache_control
+    response: web.Response = await handler(request)
+  File "/workspace/ComfyUI/server.py", line 53, in cors_middleware
+    response = await handler(request)
+  File "/workspace/ComfyUI/server.py", line 255, in view_image
+    if filename[0] == '/' or '..' in filename:
+IndexError: string index out of range
+[2024-06-25 21:31] got prompt
+[2024-06-25 21:31] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:31] python node runs
+[2024-06-25 21:31] !!! Exception during processing !!!
+[2024-06-25 21:31] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/ComfyUI/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/ComfyUI/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 158, in load_image
+    images, masks = load_images_from_url(urls, keep_alpha_channel)
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 61, in load_images_from_url
+    raise Exception(response.text)
+Exception: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:█▌13131}button,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}@media (prefers-color-scheme:dark){body{background-color:█▌22;color:█d9d9d9}body a{color:█fff}body a:hover{color:█ee730a;text-decoration:underline}body .lds-ring div{border-color:█▌99 transparent transparent}body .font-red{color:█b20f03}body .pow-button{background-color:█▌693ff;color:█▌d1d1d}body █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}}body{display:flex;flex-direction:column;min-height:100vh}body.no-js .loading-spinner{visibility:hidden}body.no-js .challenge-running{display:none}body.dark{background-color:█▌22;color:█d9d9d9}body.dark a{color:█fff}body.dark a:hover{color:█ee730a;text-decoration:underline}body.dark .lds-ring div{border-color:█▌99 transparent transparent}body.dark .font-red{color:█b20f03}body.dark .pow-button{background-color:█▌693ff;color:█▌d1d1d}body.dark █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.dark █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}body.light{background-color:transparent;color:█▌13131}body.light a{color:█▌051c3}body.light a:hover{color:█ee730a;text-decoration:underline}body.light .lds-ring div{border-color:█▌95959 transparent transparent}body.light .font-red{color:█fc574a}body.light .pow-button{background-color:█▌03681;border-color:█▌03681;color:█fff}body.light █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.light █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}a{background-color:transparent;color:█▌051c3;text-decoration:none;transition:color .15s ease}a:hover{color:█ee730a;text-decoration:underline}.main-content{margin:8rem auto;max-width:60rem;width:100%}.heading-favicon{height:2rem;margin-right:.5rem;width:2rem}@media (width <= 720px){.main-content{margin-top:4rem}.heading-favicon{height:1.5rem;width:1.5rem}}.footer,.main-content{padding-left:1.5rem;padding-right:1.5rem}.main-wrapper{align-items:center;display:flex;flex:1;flex-direction:column}.font-red{color:█b20f03}.spacer{margin:2rem 0}.h1{font-size:2.5rem;font-weight:500;line-height:3.75rem}.h2{font-weight:500}.core-msg,.h2{font-size:1.5rem;line-height:2.25rem}.body-text,.core-msg{font-weight:400}.body-text{font-size:1rem;line-height:1.25rem}@media (width <= 720px){.h1{font-size:1.5rem;line-height:1.75rem}.h2{font-size:1.25rem}.core-msg,.h2{line-height:1.5rem}.core-msg{font-size:1rem}}█challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);padding-left:34px}█challenge-error-text,█challenge-success-text{background-repeat:no-repeat;background-size:contain}█challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);padding-left:42px}.text-center{text-align:center}.pow-button{background-color:█▌051c3;border:.063rem solid █▌051c3;border-radius:.313rem;color:█fff;font-size:.875rem;line-height:1.313rem;margin:2rem 0;padding:.375rem 1rem;transition-duration:.2s;transition-property:background-color,border-color,color;transition-timing-function:ease}.pow-button:hover{background-color:█▌03681;border-color:█▌03681;color:█fff;cursor:pointer}.footer{font-size:.75rem;line-height:1.125rem;margin:0 auto;max-width:60rem;width:100%}.footer-inner{border-top:1px solid █d9d9d9;padding-bottom:1rem;padding-top:1rem}.clearfix:after{clear:both;content:"";display:table}.clearfix .column{float:left;padding-right:1.5rem;width:50%}.diagnostic-wrapper{margin-bottom:.5rem}.footer .ray-id{text-align:center}.footer .ray-id code{font-family:monaco,courier,monospace}.core-msg,.zone-name-title{overflow-wrap:break-word}@media (width <= 720px){.diagnostic-wrapper{display:flex;flex-wrap:wrap;justify-content:center}.clearfix:after{clear:none;content:none;display:initial;text-align:center}.column{padding-bottom:2rem}.clearfix .column{float:none;padding:0;width:auto;word-break:keep-all}.zone-name-title{margin-bottom:1rem}}.loading-spinner{height:76.391px}.lds-ring{display:inline-block;position:relative}.lds-ring,.lds-ring div{height:1.875rem;width:1.875rem}.lds-ring div{animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border:.3rem solid transparent;border-radius:50%;border-top-color:█▌13131;box-sizing:border-box;display:block;position:absolute}.lds-ring div:first-child{animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){.main-wrapper,body{display:block}}.rtl .heading-favicon{margin-left:.5rem;margin-right:0}.rtl █challenge-success-text{background-position:100%;padding-left:0;padding-right:42px}.rtl █challenge-error-text{background-position:100%;padding-left:0;padding-right:34px}</style><meta http-equiv="refresh" content="120"></head><body class="no-js"><div class="main-wrapper" role="main"><div class="main-content"><noscript><div id="challenge-error-title"><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></div></noscript></div></div><script>(function(){window._cf_chl_opt={cvId: '3',cZone: "swappa.com",cType: 'non-interactive',cNounce: '87527',cRay: '899810a58f58a576',cHash: 'de1c19884e6f122',cUPMDTk: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_tk=QnWIFasFgQdE4P9kWRUoXl8atNKn7lEKXLeA1NcqQtI-1719351092-0.0.1.1-3668",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '120000',cTplV: 5,cTplB: 'cf',cK: "visitor-time",fa: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_f_tk=QnWIFasFgQdE4P9kWRUoXl8atNKn7lEKXLeA1NcqQtI-1719351092-0.0.1.1-3668",md: "nFLYbRKroL5s27gvG8uKbxl8Pgn7HG6jSLLgfCOCu9w-1719351092-1.1.1.1-qDx4NTP03SpdUpLKcAG3jUnZ10vXXY6ljpH0Qp.AZ57pO6jhSlyXHR1e6bB9LU9rV4d28LskIW3pyWZSbPyFZGOhuD8VpGOrHRKLADuZuLbRs4RoowC_aBk2gXOL_C2x3f1xLodxN8jHawzVTwz2WE.85yxlZImM63uBR.i1rbDGE6pl003_RI62mw8Tzl3EnKetBgQu0YEmVDL_p8yC9BZd3162hJM0KQSiRKbIVlE0sLAhm3RfvTgD_Tc_.jQ7X1iRjDCdQ1o24xrXNtYjVV43QXujrj83sbEDrG2NTVQD1D_T31QDNlGEIOSZXNI66AiqpP69Lf5yzF2cCcIRGd.lNkQt6TFd2IcHMBQewL.6U8GgXzhBdNoJ829ERP4UCmYvfQJQ8C8UK4qmhUhleirODOs_KmLC9_8__5Nr3piddhR8I09fpe0oAnFLivpNCiM59SJ.YCQtj67urNBa5lIw2jo6xo6Uz0liYFmpQ_fe2FER6AxIxl4ioLTMONXGHxvnzgv1YpwY6qM6tL8ToWuXE4ARgvHcGZfHMncXgWEtMJXMx5bbIfsdAlQ8rMgV672fLVmWdMkLsThlMPHkrLYce69rb.iC4BJGYb00pgSfM0X3lNQXKG39AxTHgEs3Yco8KkqjqEamkgsUQ4tCtUrASVaZB1.weVBDDRehXXWYimDfF.YyvTWbbGvbvYYHR.pqF_4qegAcd8Jye.MSp.MpmTE3C7tLXkcXtk8a01Y_8E6VAO9FYybFOZ_WZg4yRc_IaujZgV0E6ltBn2ot_0fnhJhkzDtvPJlNuNZwNHiVy5I7G7abtluWWMJXSW2ChalC1D948MPV8FAc36kS6t8HQdzeivxKBzqqsXa_ljLagmAsr1Xgw75fALnKzrfE5hwIQLvOBMnnYvh0lRFzAu2eQMfApcJsWBjBmUw.AaxXGGZqfqthyoUldgttH7WqrsA4H_bquOhI1ta2thvoyc_N3iXPvNx1NLkmAQvz_Y93DniwNNd_xs6ZAVdN7AT5SUuMnQFmVZp1sQ.C_n9hP5IWiKXDGdLk6ahjMI1co0QwTrIT.3Yc1s3YObl3NwIKYxpAe1L7I4qsSGLag3u2_ng5kA_VLNlYTbY9wvugSOvwRMGX5vCVs_NIky6CkqwJ4k9.R.96RRWsL7t6o9PPdAF0SOTyufqak27fi.8XQ6XFd5HSudolm7Y2nl_yRXGXqBgFJ7QIDXfX50oRFcwk7dA2eJd.5NMynm8FBmetKERKQ24J3Al7.v8XAmdBRqb163qlaVQqBNxSjWKV35PtVxjIrb41CCfPOeXPUOrDF3lXO6TaF2T1uwry_Bs2gKTieKIZ1i8ATecWemgg5dVf8_Y5EFMy0ovyUgWa.IXBKy8",mdrd: "Z42wBs3gTUFXZidExp0t0ubY2zby28VJroLJyx63ArY-1719351092-1.1.1.1-0nKOTuhBOqrrTG75PjV7vAfgsd3eRPGsZP3UwfpgztRbUvTtxFQDR3BdRHyKSAsU0.cvbGkhmDmrvOy8TOrJn4lxHcfPrfzeqZfrJ2oh_y09OWMK2031Wy6KMRamUpegkyE8p4U6ltHZ6VzaS0JPFj7NmdGz.aSKJToabMpVDEjf0de_9mvxrTE99ud_ILOVVQuFcsicEk5Lo173OtSEtOH7S8CfF75Co288CkELwYc7bgyGlAFdaLtWeIj9VKkjJsa39AhTMKRFbLc19TZSbqwPFuMSB65kv_xOPM5nmTQ4F4G4aiH0K3_Bxc3VVBZ8qxYVb16mpNWh0kFiel3d0DnWLxcJ6sWk8QM.i5x_jAIZ2CH291l1ls6Of4YN7PwhkLhREvl81vtGE7bXcox4o7Ol.2k8fiqAQHvrA0tO1KmZvFdWeH8vcHBZfxcRYZPdsphsUVfxlGZhLfhrhaCk3Ji26WgUYLpI_Hm.RcceT_VcUoxlx7l8DgZlTHSfbjV9NXrq9_MtMC0mMldJ7rpgsaWCfmPVynAhzw_e100rw1IWLXmnN7AwxlsmEUGgRp3GHZLpGGChIvCCTQqwkOMQS7g.JPd.ud4Dpu8OtRGJptjP90noICS6sEAOnkWy665e5pgMc13ecbnXEHyrwgDWvQ2zG.UfzfIvvSLjypUyx60TDN1nyrwALQqbO3T0KCNVj4FWDxFGKew_Rqt_C5Yk3NJSHm2qP01znn48xvdYGaBLqIBe4a2uOfUbt9MtcEtPC8tTQJPSyIFaMxkQfEWRd1NkR0NdgvuyUMC5GmMzowsb6gdPGKduTFWJSZ1SF.XvaNn6YaQyAUUEgCiQLjsHU9_zVAFhoXQtIAZVqcyA8owgReja8m.LPaui0aX7etqJDb96bOB6_DBr.3Mxu2vPK1AeIQYQZqx5LPn2YpUE4WV7Ya3EVhBBV.DYDyTyEDBF_0PsCGPO1xRjmUG5E00EWHHQ7WwxkDt.GiQEdQ7QuOKulcCaas_ZN05Q41n9hKnZzSMG8AcmHokkZdOrn8u93orggRQkTTruDCazgDDdeXLpJzYt_cEHSEzh0ffm6RudUdgx.gVT4QAFfbpLJrCTL.zyomKnJvSrcbWy4S6kz8nF_9VKDPgTqUpGmPW55n1OPw_smyuaF.OxNansjjvtrLhhTx.4pRc7THE9E6eQGmpGTTpFwtTeKjjQwTWxWhwQ5tqnNMY_D7qvEwBdrZ66HKb2nspENkw7bMpIlX89abmoQVRM4OihVTJhMqDoXs8U.N9ILy0SuHPb2i2oN.K.M1hQJyt1zvL2Ufq5aV0EzDGS5d9S553m3BGwX4mR5NGSBeanYuRoJ7wO.eyPEcsbaudICi2ZYLirKqmaRkho5i3Gtl3coaH5HDODtp7Idzbr2lyGTBRT7wVuzhqdQZLKkFgAH_Apz2VebagbkSjt8pY2PQLyAn5miS.mtBByCyQLO0u8khiJ4WDEQLBQFb.S6Ku9RQUT4uLZLEhL_dzNySEb4u0jwKFNplClXpfBHdxjW8pnIh7DqNfDrLJmOc74vu69AOK5k9cFYVyC8BR7Rlw4JC2sgQ1gCQfLT4yJtrgEK_Goxia7GnVaGNeJdczOvUtNS.KXT2eWTW.iWqQmhspkjRtFmRtBAwNSwl6HLBnc6I58q1tAnCcgknlex6AvDsZYUZyi6v32z5VLfQNCVpBvzW9d3.g6Ziu.FlPLitOdEfUoPU8MWvMW91rcQ.I6FYxlzGMxqgaNbwN3gOdRPOQYzqP0ZRLksbttgUMfvW879DemoaUYOD2dYbay_ozdMsHX7STmZ0Qkoe6RzkCmF3RhIWzZBPPorj4v2zfgbmj8NaCRXEpKF4d2pcb9awNsRjzAQUPaJ4iZRQxOmImRqHWpR.BWVQMjsAcwht6_GNsDczcuYw3BlIIZL36JFTziZLRNbbloCC6U4BBH6q2Ecwuoob6wrJdRci1k611OAiTEMsZSKKIxAMkob9dUIaN8TB4UN1r3nseCQ_HK7.LQJo1vTMfJflt3mkUPffyx4f3Xk0RnAfQdw4QvURxH5BoFuOgzLcok.cmc5kkxMNKfdEn4YbjSNnX.oUwSZLyCqTXm59ZbouyCa.Se5rRstWWgI95SG96DGdlw6zbzmxT0OKE",cRq: {ru: 'aHR0cHM6Ly9zd2FwcGEuY29tL2Jsb2cvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTAvZmFzaGlvbi1uaWtlLXNuZWFrZXJzLW9uLXRoZS1zdHJlZXQucG5n',ra: 'cHl0aG9uLXJlcXVlc3RzLzIuMzEuMA==',rm: 'R0VU',d: '5J2T7Ln/JnPj3CfYEBmXwYl7Ja0PQ79/e4jISQCLVkClTqLIFYIhZn9nvklWuTaGF2PIrc/LFzxZIZFzvmZRJ2Ai0IHey/I3+UKeQuNMekzbJnNkCw2aREQhpoJSxkIbRJJ4p4Hy/vVmasPCjhoerdxW5txKNrZtM/PL3RPsDixCLnq71Lr03tRLHlCIItkfq8vr6PRzQBy9+CmXnK3q4H0+P2loW56Vgt6Gq52SOcJfGhKKFFzm5XiS3HFy/k6HEjo7gYQhCBG8FaH6yYQiBsDBPOlqhr26ob7XUGafsgnY6crZGua28p62ed0a2xpb/WItobUHiEtYoeGX7c9ggR8cspLKa99JyCl29l2qDcQ059K9aSJjgS0KOFmqtu2+sYRdQxqI5B4BjgAnZMPh0OkAOph18AWSFCpIfAT2/vYozxYZ91h6A+XgKiFYn3Vf13C9RKj5wQIHHLHJmrwdRNG2wx7zvRihQF/1SGeAxNLaQ2c2E4afFeHOdsm3tgZXhTAE3+8DPjqWf+EgjbihRo9U4AJy0Ol1MsELjLTA2FS5NptM6BxHauJZAhJ+WsyJ',t: 'MTcxOTM1MTA5Mi4wMDAwMDA=',cT: Math.floor(Date.now() / 1000),m: 'Oi54POHATgt2wZm163Vv5+HmtYGH8VB6t2OcUUa2BZU=',i1: 'bamNs9zfe6eKAX5oKbcglw==',i2: 'YdVZK/u3K6NnsnE0zVaijA==',zh: 'VPs0oRgIUuJhQbYIl65FY7EBjkwY7taths2UIOeqy0s=',uh: 'YE9XOpG5TeHmhA1zfs5mxC8CrRZzq2a/+r+OU7dliYQ=',hh: 'x0Ap3EAbH7UEmYT1GDNP7qFjDG3PH3ZUcq9ksIrwdAk=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=899810a58f58a576';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('█') !== -1 ? '█' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_rt_tk=QnWIFasFgQdE4P9kWRUoXl8atNKn7lEKXLeA1NcqQtI-1719351092-0.0.1.1-3668" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script></body></html>
+
+[2024-06-25 21:31] Prompt executed in 0.28 seconds
+[2024-06-25 21:32] got prompt
+[2024-06-25 21:32] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:32] python node runs
+[2024-06-25 21:32] !!! Exception during processing !!!
+[2024-06-25 21:32] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/ComfyUI/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/ComfyUI/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 158, in load_image
+    images, masks = load_images_from_url(urls, keep_alpha_channel)
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 61, in load_images_from_url
+    raise Exception(response.text)
+Exception: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:█▌13131}button,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}@media (prefers-color-scheme:dark){body{background-color:█▌22;color:█d9d9d9}body a{color:█fff}body a:hover{color:█ee730a;text-decoration:underline}body .lds-ring div{border-color:█▌99 transparent transparent}body .font-red{color:█b20f03}body .pow-button{background-color:█▌693ff;color:█▌d1d1d}body █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}}body{display:flex;flex-direction:column;min-height:100vh}body.no-js .loading-spinner{visibility:hidden}body.no-js .challenge-running{display:none}body.dark{background-color:█▌22;color:█d9d9d9}body.dark a{color:█fff}body.dark a:hover{color:█ee730a;text-decoration:underline}body.dark .lds-ring div{border-color:█▌99 transparent transparent}body.dark .font-red{color:█b20f03}body.dark .pow-button{background-color:█▌693ff;color:█▌d1d1d}body.dark █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.dark █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}body.light{background-color:transparent;color:█▌13131}body.light a{color:█▌051c3}body.light a:hover{color:█ee730a;text-decoration:underline}body.light .lds-ring div{border-color:█▌95959 transparent transparent}body.light .font-red{color:█fc574a}body.light .pow-button{background-color:█▌03681;border-color:█▌03681;color:█fff}body.light █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.light █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}a{background-color:transparent;color:█▌051c3;text-decoration:none;transition:color .15s ease}a:hover{color:█ee730a;text-decoration:underline}.main-content{margin:8rem auto;max-width:60rem;width:100%}.heading-favicon{height:2rem;margin-right:.5rem;width:2rem}@media (width <= 720px){.main-content{margin-top:4rem}.heading-favicon{height:1.5rem;width:1.5rem}}.footer,.main-content{padding-left:1.5rem;padding-right:1.5rem}.main-wrapper{align-items:center;display:flex;flex:1;flex-direction:column}.font-red{color:█b20f03}.spacer{margin:2rem 0}.h1{font-size:2.5rem;font-weight:500;line-height:3.75rem}.h2{font-weight:500}.core-msg,.h2{font-size:1.5rem;line-height:2.25rem}.body-text,.core-msg{font-weight:400}.body-text{font-size:1rem;line-height:1.25rem}@media (width <= 720px){.h1{font-size:1.5rem;line-height:1.75rem}.h2{font-size:1.25rem}.core-msg,.h2{line-height:1.5rem}.core-msg{font-size:1rem}}█challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);padding-left:34px}█challenge-error-text,█challenge-success-text{background-repeat:no-repeat;background-size:contain}█challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);padding-left:42px}.text-center{text-align:center}.pow-button{background-color:█▌051c3;border:.063rem solid █▌051c3;border-radius:.313rem;color:█fff;font-size:.875rem;line-height:1.313rem;margin:2rem 0;padding:.375rem 1rem;transition-duration:.2s;transition-property:background-color,border-color,color;transition-timing-function:ease}.pow-button:hover{background-color:█▌03681;border-color:█▌03681;color:█fff;cursor:pointer}.footer{font-size:.75rem;line-height:1.125rem;margin:0 auto;max-width:60rem;width:100%}.footer-inner{border-top:1px solid █d9d9d9;padding-bottom:1rem;padding-top:1rem}.clearfix:after{clear:both;content:"";display:table}.clearfix .column{float:left;padding-right:1.5rem;width:50%}.diagnostic-wrapper{margin-bottom:.5rem}.footer .ray-id{text-align:center}.footer .ray-id code{font-family:monaco,courier,monospace}.core-msg,.zone-name-title{overflow-wrap:break-word}@media (width <= 720px){.diagnostic-wrapper{display:flex;flex-wrap:wrap;justify-content:center}.clearfix:after{clear:none;content:none;display:initial;text-align:center}.column{padding-bottom:2rem}.clearfix .column{float:none;padding:0;width:auto;word-break:keep-all}.zone-name-title{margin-bottom:1rem}}.loading-spinner{height:76.391px}.lds-ring{display:inline-block;position:relative}.lds-ring,.lds-ring div{height:1.875rem;width:1.875rem}.lds-ring div{animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border:.3rem solid transparent;border-radius:50%;border-top-color:█▌13131;box-sizing:border-box;display:block;position:absolute}.lds-ring div:first-child{animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){.main-wrapper,body{display:block}}.rtl .heading-favicon{margin-left:.5rem;margin-right:0}.rtl █challenge-success-text{background-position:100%;padding-left:0;padding-right:42px}.rtl █challenge-error-text{background-position:100%;padding-left:0;padding-right:34px}</style><meta http-equiv="refresh" content="120"></head><body class="no-js"><div class="main-wrapper" role="main"><div class="main-content"><noscript><div id="challenge-error-title"><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></div></noscript></div></div><script>(function(){window._cf_chl_opt={cvId: '3',cZone: "swappa.com",cType: 'non-interactive',cNounce: '30240',cRay: '899811d1ff95da57',cHash: '8aac61e4947476d',cUPMDTk: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_tk=ar2WsnvEg.vn54I9E7Xb0yB6A1TFShcz8hm461jFY.c-1719351140-0.0.1.1-3689",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '120000',cTplV: 5,cTplB: 'cf',cK: "visitor-time",fa: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_f_tk=ar2WsnvEg.vn54I9E7Xb0yB6A1TFShcz8hm461jFY.c-1719351140-0.0.1.1-3689",md: "P5uXZjpg3SJEDWZncwjDi_mYgln_Z6rIzL0Buejcykg-1719351140-1.1.1.1-97fTYERWi5HILqZzcHNG.PKg1bjRAGz_n_KPUBa_ryUeN6J5WAzXTvZkEK6E6elQmbIFzy4BY7xH6bGWUvUQraNpY7XyRsshMAadbTL1_hnU3O3zd59Gr7fs0s2vvvOYCSJBicw0FYujfrqlREsqXybjrwHQ7O15Zy49UCAokqT6hj9cZuQ9ITzXyGfVpJbhogwH5SbYTiRL7Nqhe144O8g2PlibEB1_cIxEnJrNfPND2BZysYZOWh3tei2rpYZUCs4pDQYp4t4wa5wktFGTqBZLysZkDCuLHcvJ5bdtUYHCWVWOgy__TL5PTwiWtxT5tfAm5mdt2gNTTnnQ38fZl.7oCq0GepFoYV.3QQEdc8UzPybEqIIzXJJReC_7ptz0343vZmwKzJh.y6MyI7NWDj8ja49xl1lgCOUg_3YamDkXmvahttSkOIxZdnmGNIfTJDn0rEmrCVqg7kLJGtaiwElTDmmqc9kO3msWMQAaEaVmiTRDrmcuvYL6iREb9FgPNGfQwW3Twfqswj2TQPgsw3pZEkrvrcRBY7QcB3PShLy9zpB0FUMq44RQNcu0qmpEEB8ADzUZPY8BcEbj3eQyhbqP16cjzc_6Wh8Z2KfUFeB5lRnbiG8xpKsn5lk26qarrIfoe5YBHcZCTXNstN4LLXMWFt_KVxh4IWuKNKSRB4nMiR_EQWq4kMxX4qrAlXVQFSnAXrLA4Q243RNiVgTNvgK2IaPI9kgIP70nizVrETewQPoSSXZ5ziqJDRyrs_bJeJhnV03A3OuijyqOWwhPejPtgHfj1T_nOsyoZG2FamfB_0rNKC7te929X6sq8f8c4tWVXgYDde1AnloMZwzFMxJGFNxvc5TwLMYjqMlM8ITl_gU51ecsXjeL8TT4N6TXk7qnY2TMfQuoRZmh6yF.Upyus87FDc7jyfdOwmgb01P0w7bnmRu7iAWh_9G_omUFjihXR0hPhPmOOQkGxrDQmBxQdJ5UXBHxEFUUu.Wq3AfwsqYumMyUnNTSq_n2K0UoP0lC226h9XePEa.xnWlZ8UUT1FgUh8kieMZDpeSFXMweZOya19MEgLOYc0K5gKcoTIOTV.4gvGNpA6ZLou1UT44EGCY0QNW2TCkrBnmw6b3ujrizviO2SwEJ_txQ_2yzZERkoSriLex_NMkPCJO8Wydz80UJClREStQu24BJ3fQCCNzc2bQSEraibRWNxF7wBhqmnRpcEg3136NGs9EGuVgUAZoWFTBMN_CZxQWe2S2ORM7og38CWqorRRjC72K8El2SVPmLVJWXQS7m9O2gqgYLCQT2.9jhgLE0iqqMyk0xaBZFBz75yQCdusTdxNQwVVaZ8EEy.QPhoHj09ZikFM6fefpp4WwwvM__p28qXGQ",mdrd: "aGRa.XTCdLQYOpCPkIV50rlUQO7g9iqnDdW4wy2bfkw-1719351140-1.1.1.1-sIwCB6vdHgrUy9_jB1jNo84aCMx1ioSRD6O.iRE_UG.WrGogv7Gly0PzpbhHyJod9sLMGj8ix3Xj0aZ8lAMiwCyXOhI3G5XA6fxbA3LeFzLngLsp2rfYLaeKlphNBVkIkjab3sG9_o7z.0p6LNsiENUkoYc05axCcP2rdaU7mzKCHzDcxX4JpT6YKt.R8dfxILSgIf2s5F81WvFSLUsUd.Wir5i.4VkQWqlmOdkKamR6S32fYuLzQw7Ymr_Em8nKJB1yzFb99bsDhcdCXemwqvhYPkkTCPAwiJJvUgt.u498jDSUFk8RSKOTAbXHpaDRZrH08uPe_b6U4EzkmLPlwk0X58X4EEVlb8cmGXB1rwGIKapsrqIBpAMRsJCKS9bfu6a7UvyHfdFAtGhCeEZPxIlk9STgVkQTjNuBmLv7MD5BTldkTnD12nF3516_MNwA93NVoBcItKoug94xThnhTKaaHuMqz_KXEVF6Ht_sgOfsebpjFXvgJOe1CsBHv7abShxfPRlqE9Wp9lEppaT4ILwv5ZButFnUKiSKj_1nxFjcxWAUXkUSDhWucAOkmVtQ0yW8mC_qS.pRC1q9WDHm6GG53cAuU694FlK7ZjNibE7su1Seb7urXSF2vFOgGn6lKWAw_71S8w0EMAqMMEeMc5AvlR257kGajROArMN1CUsHG8kzS1xHVuSWPNkIekRcVXshNeR8B3LMLfBlqY4QgoB57921D7RlP.a7xaOEuQCs02RaXaIto5aW384MSAXkG95IOpZcaHnzDZBYCSxNKH84dx52tNtCqr3.vjHxOppdDgytH023GU0MUHqN2nN2ysMhXVxWFHENvAVFZbJvndvPdPYzEnE3TirYrPSMKUBYSrODd9fdDHSbGvIlsyxlxgqA1cBX9Bvce5dJ_eWmHGDpD3FUHpSbLLVkOU1Vx2VcriztnZpE4JTFup.0K0HKBw6wY17gl20omVkn9SUknBqpwXssD_vStKP1FQDhPfsuSAF57TuvrDJ4RXtgdSA14q4AsdQK_ZFM82JyDh3Oa2iNQcH6ebZbChnIhtYqLYg_PJkFCukhOmUoyqQsrfbjN3MBdvIHoGPu3UK7LZdDBNCqh0WG_8ujVDTIoS83COPG7_5rb1juCJU9ToxwJLVSNCYXL2zFqZ_rDkXtVByFOs_xQoz3CgPIW92T.rOUuPyhDAKaDHFbdp32PGfYHvUyEWdDTSpMy3l_YC73CuWltMNufNaDqNBbIXUiW2J4..1WLTgd4cnJp5sX5aiViIDy0hdlJd9KLOR9YATTdcK.M7jLoJlfUWcayiG_XRCnbtWfPjS43xSOoJGQf9l0pm.I48o1zXm2oMjkz_jegjqso4oUQqlj.xKcdioUfFbFgXzkii1SCCnFMdNpFLajqF2ZH1fxjnoLn_qsigv8qeO5tacYaYwXq5QeGxBbBRQCMRaszCEXtEKvxdoB4.nSysMmOPcs_cwr6VhOHR9LOIjKrt15QVIdCSINvpDo4bY6wTcOwN_gtePb3C5qENLfXgB7Ve2jB2Ah8HE20dz0CdB4cojfFdYJni7Dt268o.9k3H9BMwFd1NVBK9mcRR1cbACYTjZFF6PQ3xTGLFBOuUhjK6wx.ztZfHIP1QiX1LcEFxnyu_tAuANp37a8KRXLR6qgXNV3eM0GtIC1GifGeZPC0s6dmwn5VIfpK4C4rDN_3mVlPp34kNjW5kumQcSewygBQ1YZf3od6b.5VEIVg51nMN8nOG5iQ.AGrbq5NFyRemG_yb_FdnBaBB9CRAnKP4u.X1R_PokxDTlzkZqCZDz5xMCC.uHrLB2oLM74DrpE9f85VJD9k9kTulyYAGMhTgAhgM7wzo2ATGRYHOkwMmS9.35Pmf0DAeBYuwf_Y_E0irZHV24DWQzjLS8esB6_qF7lKtgBuUfgV5DQUj6O9.31f0KyyI0lmv3EeTt0mOHzE9AYBeVrIMqZon7VC17yJNHLuuryy_hQe9vZqXaS.Dl.EAETi59RJ_F9eGwfxxApBzVbS1BpmwQCat1FOj4RMIosyA1AU2j2lZvaZ06vRz2ATT1eGArYZkTGehEZRnXT3ztyTpJue9krvYi4GKubvbcnJTIQs_foSgAJbWWoGX2LhNqomwthaKLIXsJeuRwzOhC8kMWyTwCgGrTUiLELS6tl",cRq: {ru: 'aHR0cHM6Ly9zd2FwcGEuY29tL2Jsb2cvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTAvZmFzaGlvbi1uaWtlLXNuZWFrZXJzLW9uLXRoZS1zdHJlZXQucG5n',ra: 'cHl0aG9uLXJlcXVlc3RzLzIuMzEuMA==',rm: 'R0VU',d: 'ZvJkvS46XUmrY8iePVshz7AL7zU/EPzLXqVfPy+M3ipO6Lbr2SgJ0FPYChFEPXuzxhUD9Y/P+9OSO12rsJseJAVjQkysourr/lcI6Aqjn4Vdt7VjC2w69Eyh6abz3AYyTkkQ+k06XgrYO2gjkHVPeUN9Il4I2Z71BfX9tPs9xST4HsOk0asHW2bFz6Y9Deft+6r7hO6SJKn4JukSCsdTqYixqvgVzl02otVe+Vgd2uTDLQZo+dOdXEWhSzEjaBN+IGtjB4lB/b96Eqgt9B/upKNmfEsjMtEMGLCFc3xKyZe7pxK7HpOS1wDMyx7igydxfC7qjbAVLW/LF7Z3CSzxyoltk+exbWWesvN5JIETckdmSQsRgIPwWYiJgqo8gQfqgMILNCEoFBQeuIjgnpmQBKOrW06j0Z78zafI35ttDcRcHvl9addwkC3pnHKKXM6HR6+GJVmo0HnFQx9SN/A1iKHIbilrcjawBo8FOlWGkKgr2PvGSEVWpqqNZxQIhmN7pbITfXquKNIf7r8uRBXB8PSpeI9c/Z+AxFW3PZAQWDN9J1wTEgYIEtwWfBB9gP03',t: 'MTcxOTM1MTE0MC4wMDAwMDA=',cT: Math.floor(Date.now() / 1000),m: 'zagTSDdQXzEJpkGlLxtMuS8LidEAdI91v7s9djti220=',i1: 'ws5iOkD8hP+VHF5x9jGxZg==',i2: 'oXdc4sh1zkAHmihNiGaOyw==',zh: 'VPs0oRgIUuJhQbYIl65FY7EBjkwY7taths2UIOeqy0s=',uh: 'YE9XOpG5TeHmhA1zfs5mxC8CrRZzq2a/+r+OU7dliYQ=',hh: 'x0Ap3EAbH7UEmYT1GDNP7qFjDG3PH3ZUcq9ksIrwdAk=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=899811d1ff95da57';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('█') !== -1 ? '█' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_rt_tk=ar2WsnvEg.vn54I9E7Xb0yB6A1TFShcz8hm461jFY.c-1719351140-0.0.1.1-3689" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script></body></html>
+
+[2024-06-25 21:32] Prompt executed in 0.28 seconds
+[2024-06-25 21:34] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-25 21:34] got prompt
+[2024-06-25 21:34] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:34] python node runs
+[2024-06-25 21:34] !!! Exception during processing !!!
+[2024-06-25 21:34] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/ComfyUI/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/ComfyUI/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 158, in load_image
+    images, masks = load_images_from_url(urls, keep_alpha_channel)
+  File "/workspace/ComfyUI/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 61, in load_images_from_url
+    raise Exception(response.text)
+Exception: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:█▌13131}button,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}@media (prefers-color-scheme:dark){body{background-color:█▌22;color:█d9d9d9}body a{color:█fff}body a:hover{color:█ee730a;text-decoration:underline}body .lds-ring div{border-color:█▌99 transparent transparent}body .font-red{color:█b20f03}body .pow-button{background-color:█▌693ff;color:█▌d1d1d}body █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}}body{display:flex;flex-direction:column;min-height:100vh}body.no-js .loading-spinner{visibility:hidden}body.no-js .challenge-running{display:none}body.dark{background-color:█▌22;color:█d9d9d9}body.dark a{color:█fff}body.dark a:hover{color:█ee730a;text-decoration:underline}body.dark .lds-ring div{border-color:█▌99 transparent transparent}body.dark .font-red{color:█b20f03}body.dark .pow-button{background-color:█▌693ff;color:█▌d1d1d}body.dark █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.dark █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}body.light{background-color:transparent;color:█▌13131}body.light a{color:█▌051c3}body.light a:hover{color:█ee730a;text-decoration:underline}body.light .lds-ring div{border-color:█▌95959 transparent transparent}body.light .font-red{color:█fc574a}body.light .pow-button{background-color:█▌03681;border-color:█▌03681;color:█fff}body.light █challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.light █challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}a{background-color:transparent;color:█▌051c3;text-decoration:none;transition:color .15s ease}a:hover{color:█ee730a;text-decoration:underline}.main-content{margin:8rem auto;max-width:60rem;width:100%}.heading-favicon{height:2rem;margin-right:.5rem;width:2rem}@media (width <= 720px){.main-content{margin-top:4rem}.heading-favicon{height:1.5rem;width:1.5rem}}.footer,.main-content{padding-left:1.5rem;padding-right:1.5rem}.main-wrapper{align-items:center;display:flex;flex:1;flex-direction:column}.font-red{color:█b20f03}.spacer{margin:2rem 0}.h1{font-size:2.5rem;font-weight:500;line-height:3.75rem}.h2{font-weight:500}.core-msg,.h2{font-size:1.5rem;line-height:2.25rem}.body-text,.core-msg{font-weight:400}.body-text{font-size:1rem;line-height:1.25rem}@media (width <= 720px){.h1{font-size:1.5rem;line-height:1.75rem}.h2{font-size:1.25rem}.core-msg,.h2{line-height:1.5rem}.core-msg{font-size:1rem}}█challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);padding-left:34px}█challenge-error-text,█challenge-success-text{background-repeat:no-repeat;background-size:contain}█challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);padding-left:42px}.text-center{text-align:center}.pow-button{background-color:█▌051c3;border:.063rem solid █▌051c3;border-radius:.313rem;color:█fff;font-size:.875rem;line-height:1.313rem;margin:2rem 0;padding:.375rem 1rem;transition-duration:.2s;transition-property:background-color,border-color,color;transition-timing-function:ease}.pow-button:hover{background-color:█▌03681;border-color:█▌03681;color:█fff;cursor:pointer}.footer{font-size:.75rem;line-height:1.125rem;margin:0 auto;max-width:60rem;width:100%}.footer-inner{border-top:1px solid █d9d9d9;padding-bottom:1rem;padding-top:1rem}.clearfix:after{clear:both;content:"";display:table}.clearfix .column{float:left;padding-right:1.5rem;width:50%}.diagnostic-wrapper{margin-bottom:.5rem}.footer .ray-id{text-align:center}.footer .ray-id code{font-family:monaco,courier,monospace}.core-msg,.zone-name-title{overflow-wrap:break-word}@media (width <= 720px){.diagnostic-wrapper{display:flex;flex-wrap:wrap;justify-content:center}.clearfix:after{clear:none;content:none;display:initial;text-align:center}.column{padding-bottom:2rem}.clearfix .column{float:none;padding:0;width:auto;word-break:keep-all}.zone-name-title{margin-bottom:1rem}}.loading-spinner{height:76.391px}.lds-ring{display:inline-block;position:relative}.lds-ring,.lds-ring div{height:1.875rem;width:1.875rem}.lds-ring div{animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border:.3rem solid transparent;border-radius:50%;border-top-color:█▌13131;box-sizing:border-box;display:block;position:absolute}.lds-ring div:first-child{animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){.main-wrapper,body{display:block}}.rtl .heading-favicon{margin-left:.5rem;margin-right:0}.rtl █challenge-success-text{background-position:100%;padding-left:0;padding-right:42px}.rtl █challenge-error-text{background-position:100%;padding-left:0;padding-right:34px}</style><meta http-equiv="refresh" content="120"></head><body class="no-js"><div class="main-wrapper" role="main"><div class="main-content"><noscript><div id="challenge-error-title"><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></div></noscript></div></div><script>(function(){window._cf_chl_opt={cvId: '3',cZone: "swappa.com",cType: 'non-interactive',cNounce: '43329',cRay: '89981555292ca57e',cHash: '893a69092b23738',cUPMDTk: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_tk=rmYbtcpIeTUmWzvtKkh26UeVkpIy_2CMXyYDnwIyS.E-1719351284-0.0.1.1-3689",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '120000',cTplV: 5,cTplB: 'cf',cK: "visitor-time",fa: "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_f_tk=rmYbtcpIeTUmWzvtKkh26UeVkpIy_2CMXyYDnwIyS.E-1719351284-0.0.1.1-3689",md: "S59FAClcB1tkkXHQ74lq6hE2nf4_rP9IOBqfHAmcOXk-1719351284-1.1.1.1-tJ0MfUTsDzCaPjP_6SyWLKHdJRISVWyZtq9OK7..mwY4SCIwtVqjdMh41p4o2O.EXH2jkVE7buh.5Y2YrdicLK_lN8t2H8C3Qa.mXSqZOlxlRemMsK_UcofUDD8KzB8B3V7lIFtldqpRV0pVOJ9imIFQ2qO63Pdba_2G.qnd__7mmaO.gFwoPBL9.F0Rmevq186wcTdk3V.No4GOveLj.Vr..9QuLk3uGDf9aoElqxZmgcZvHHIp5FkVOcuty3pQYwVPucCKzPc5RmzrP7.2ycKZgU38svpO116XaihLuiD5BlLgBFhmlaxJi5RHk1epSaQSlcLdlODwZocfoXr6XJeDLl_dZouldU0oo5zbJfONS6mDTDrzTkl_JiPFYN0LMa4no_zH4Of6L90hJLqPD0wfllQVnrOujw4lK_Jr2fCBjGuPcWENzpKhoy0mG3hB24vysTWM1yj6kBbxqo38RFe_tW1F8zvBA5.wsPZshHyKuQVD527n7VUu.ymzPnghfuVC2xuxlwh6SYwN9ssXolP9CunPrJKlneW5AK6PZPUoOJdcr_ICK.dRsMpeEwuQzRx1nAHm6A_3QYtGwxY1_jWDY4J96g28azfUKVjnl7zhD8uSIQFW96kl7vUdx9RydTkmuQ9DM1QDpg9LeE0aRCAd7fCLzAEw1jrQTmYaHv2xTsRarqio.lG_Vgmx2zfh_9QMAQZ0TsANZuInccnKgnF.uV7kYJWbh2DGdQx0cdWR5oBVJjFV1Er2hSm0X483e_bFe5Ch3ki56d.jRRWjIKqvXXCods4djVCdabsTOelr5CewLkSj2o0KcQbCT5kcYg3q29gpwOfuqg59IrEQeLmqo6gksxMfQpbWcXwB03NAEXY5BcmcweileWw.eD8cpsu55SL5LQBjP6PhuG7M4WWmqisZkbMlx.yCa0l7oSzjehPeGZbBRgrybil.GOf.6XjbQSe2P._U6KHjk1WvWDs3CbUq0QBlhKacT0mHF5tL_d6y6J0uKwX6Mbdx5r_ZmJbHTYLLseV.1iozYDwFy6p44mLCZ9ZvOdGyryS4HiRdKpM0HyCW0NU0MyslRzPrWBsy5BQfTONHgp2Xt5Q0s41maeB72UjjB9DUTzT7P1esa5fRWwXycKU8W5Kr2UuJ0NNht0P5BX3Xv6kyXPICQbm77yfa_bu9eXmekBkJlqTccXAeoGSSlt0OyMJ5ejN.RpnLMvglqWtpSE9.5s32YSGB4qDyH1GB2.fLPtmnN4xtx27NI8c3d_Ii9pgajzBiWNJXuSYGGtta0fN81xRI_6k_YY3zUeJ7rwYvfh7VEDmHsK.v3EWAqRvuYRsYtdbiy5Xju7ftpfHpIVNQIT0qwjGj_ukFXw_SQ3FCVJbbi4k",mdrd: "zkfmBEQhwIVS_X9fhDOvlgKujivD0UO.5VqIVoEHy2A-1719351284-1.1.1.1-.OB2c9r8hdUIGVn30Zk6xr6KUXUA7vMu55Psi73H4OqEgCsM8LUGx7KaJjS8_it5tsSscVbISVAH8jF.GUnppxUYYnob_yVXjUyuRS1wlpgTM5WgoZvJCbpRQnjlWl0fSaUItViikaqtr0L2QZcK5P5Bzu_ooy1PJoA5JpacfPqrq.EqJ_remlAfoTPmK.l7_wdiCC9Fx_q1Lr070Onnxn5nzhl97Go9k.AqF6POaISvEqNUxeRX6PtK56_qYVQlq0VmTMDGGrfbeqW4qITj0z8CWQgoVJsLFiL9A56s_zI6gsGEyYASr5oqJZ4LLnYCL10nwjuVRYIlaMqiuR0_.oY3TZ6h86LBcCxXbApE1WJvuAMW7CKM3HNTqvib_8JyUBe_hVwqOs4.jIs87cY3t0npmwVbHj6pm3eTg37lJyXN01.uChpQhEI1fLvCeZraxws17L4CiWgXEMw.OSU8WQncfNiKFSo7ezH.QQFZAIprtltPYGrcism312bQ.Y2dnat4EbRXBbeHyvIFV3XrISB1ZDweiGH88rTaUFci3xS8gUtTWeww_K8eB4L0cxMOGij6EUUTz06AU7yU6pwSwSZjQStWWvQdwB8rRyVTWM0RHj8mCmpPj9rC670GAalOeVb5ExY8t6AzdRZQqgZWfC1MHdaxfKOc1jjSRYpX3w5T9p8iZVMcFVamEqZSDXnA1C5pLDwcoVpqRjeRrtRl.zyjjzZC6oyBUoXE5y533U81qHzgNPK78luG7XpwO.zGkB4AvwwhYc2pU7nBqW_regWnt2zKy7N8259FoIywEly0QyIy1jcusw21fSl66O.tiUvT3v63rUjcdAOl0EXwiLu7ffJR3U0lhxtPOaPqxo1sKLHyEHMm0b7ePUHg.1xAdxR7XLUojbmoGAxNbY6kjZp3eWKgAG0r1fcJZEyXPIqBE74nq9.xF_Ryz67yCM1RTiiU60m2vdQ9mgboKgAkNwjFMgV_zauacLij_o1HV.X3VBap0YqB4gvN.W2VeU4F3PdV9v6hIMjq86OZsScCTgJo6Gg2Mj2PgKYAhKjmj7or1V5c7y4WQrSqO2KlB7TN_YN3FjzJWR5UzFYq16Ju7PQ2cFxPaAkDF0AMb0fZDsNzXOzyekpED1TzP1A_5jJTpeLT8nqSV6fLgy7sBJWSiLDcvjsDqzpq4qe5GuNDK9DtcedDnWopoL2Y8Lh8iIiU4q2QlW_FpYfl2TJMdG3YBLNwvI8JotJe_8YOzJIZ_0kYqur6M4ovAdOovVX6wFa6zsBZN_13cdq3LON.AXkx5Yh8MG46h3AgkJnS2eEBNTEcnNVt4uN6tRw2g11HQ0f0JiJiMGbVH6t98cV5FhNHcrwzgd9S0.tZNCukABy_UKP5.847W94Vrxg.5lgCD0M.jhcQiKH9QvI.QggOWa0An3dLxVPQS1zA.0G_LQm51qbIJNKTK11FoPiSXICiKaPYfqzOtL1v.izEL91hJVzp3AeXyN8Cd7jMIr6Qxg5SYWEPJKGEiDKgfKjhfv_.sIKQRzkadnbz03COCDTcNguMv4pAjUS0X2a3ZQtkdO.kUoy3h.rn.oe98Wv6_i9GR5AY8.UG7NUGkPL.07VPQgxeQ601kT2jnZ97KyrvSY39lWRB_c6gXotSBCJ3g11IekefVFkCpLHB2frs7ViLJG01jNgVqNHE7pmhPDWLnr6ZM2G6ZNB9nDYLG9EujIZXau5rPQ8xj_9VcBZbKeaJru.GGy1_vCTbuFFytsrf7Ol_9jM.tEGuexOUjjvCkJWE6LcGDdtnqC_7DxGGzlBOcnmGN2ocPJBCBSnvemaxes6fjTwoJammPIYKCsQ8OXeWt9RavM1UItfj.wYmxMgbyUGRJQoVTUSj7do2DVLYzJod1LAlCvwm.3TxjWk3GEE2jKaah2tMg5Y3O3btnq7JdRWApS9urJcGGTV.A9yqfV3fY_MpuHx4ONsxT0TrV4nYh3tSyM93nDEwTwJzUo6nJ6NNoGHJ3InRKIpphbZAAYMEfugH4rTrE_9wirfyyC489EUO6IAWEvGCGIShIz5mRYCm4xLcOLQy2oyjoG2KR5eqXtr1Qt8Ra64qtzf5cmCZ0E.AjXOecjx5bhlHH_J63TE2VL25s.Uqrz4r78tf8L9CR19617c4UIuzDCy6yUyP.Rt2",cRq: {ru: 'aHR0cHM6Ly9zd2FwcGEuY29tL2Jsb2cvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTAvZmFzaGlvbi1uaWtlLXNuZWFrZXJzLW9uLXRoZS1zdHJlZXQucG5n',ra: 'cHl0aG9uLXJlcXVlc3RzLzIuMzEuMA==',rm: 'R0VU',d: 'uMCQ3+djtCwV50/tLWP/3vSEiDGRwhjjnvCC6307jcmiIq8AFo+mx6zziecQL/HbvMpQaPMdcnPuD/1DZVRyY1umaZL6q0f67r/pO8YYsSMIl/M0g2iRgdsNKqsP9eC1nCXeIoThBN+wshWVqS0l3a/vPO5ZiM2dAkgG9/9ArnCzeSGruIqOL3AgBeYS/1G9OlzrlvzZsJRAX/wz6o9BHVFfgb9mfKi14npgIkmrTZSoAbx4AFsB0owkQ2fsrFg3AcAzhgP490eaEiCRuGo7Ajxob8ti/XVYhRxYqa4N7bSG/tF4ZwBUref5nEmkSv4wMpAqlJoWYRCaX4Bpk8w0eePnIwO5yORo4TZ8efex+xzPg0jm7rJcvsSgb3yPj4WKPFVeCURbF6C9ouoQF9HRyvUK/dydnKhODmqhQW8Z3rQcZafRzWkDQffolW/iDgyes/bpfBF35o30HSf9k67B98WHlS5/PF6wZ0JsPSlyxwxxixrmK7/bPfFuXDEDAZ8ZdAYQIvazkAOjgOxlEV54FfxICRhcjNfDjalqZyScaMhKCZghHtSss/RYDP2O+TtH',t: 'MTcxOTM1MTI4NC4wMDAwMDA=',cT: Math.floor(Date.now() / 1000),m: 'mWZ0NRq/9c6wp1Ci9hi5meK2LOpY9A4rDw3gbbzvXoU=',i1: 'X4tnzOp2nkMRJrcWshPNeg==',i2: 'A7u8iQ8CH71aNm7IZeCKkQ==',zh: 'VPs0oRgIUuJhQbYIl65FY7EBjkwY7taths2UIOeqy0s=',uh: 'YE9XOpG5TeHmhA1zfs5mxC8CrRZzq2a/+r+OU7dliYQ=',hh: 'x0Ap3EAbH7UEmYT1GDNP7qFjDG3PH3ZUcq9ksIrwdAk=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=89981555292ca57e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('█') !== -1 ? '█' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, "\/blog\/wp-content\/uploads\/2023\/10\/fashion-nike-sneakers-on-the-street.png?__cf_chl_rt_tk=rmYbtcpIeTUmWzvtKkh26UeVkpIy_2CMXyYDnwIyS.E-1719351284-0.0.1.1-3689" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script></body></html>
+
+[2024-06-25 21:34] Prompt executed in 0.27 seconds
+[2024-06-25 21:35] got prompt
+[2024-06-25 21:35] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:35] python node runs
+[2024-06-25 21:35] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:35] 100%|██████████| 30/30 [00:02<00:00, 13.12it/s]100%|██████████| 30/30 [00:02<00:00, 13.15it/s]
+[2024-06-25 21:35] Canva size: 1024x1024
+[2024-06-25 21:35] Image size: 512x512
+[2024-06-25 21:35] Scale factor: 2
+[2024-06-25 21:35] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:35] Tile size: 512x512
+[2024-06-25 21:35] Tiles amount: 4
+[2024-06-25 21:35] Grid: 2x2
+[2024-06-25 21:35] Redraw enabled: True
+[2024-06-25 21:35] Seams fix mode: NONE
+[2024-06-25 21:35] 100%|██████████| 20/20 [00:01<00:00, 10.46it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:35] 100%|██████████| 20/20 [00:01<00:00, 10.42it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:35] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:35] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:35] Restoring logging level to 20
+[2024-06-25 21:35] Prompt executed in 17.32 seconds
+[2024-06-25 21:36] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-25 21:37] got prompt
+[2024-06-25 21:37] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:37] python node runs
+[2024-06-25 21:37] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:37] 100%|██████████| 30/30 [00:02<00:00, 13.16it/s]100%|██████████| 30/30 [00:02<00:00, 13.09it/s]
+[2024-06-25 21:37] Canva size: 1024x1024
+[2024-06-25 21:37] Image size: 512x512
+[2024-06-25 21:37] Scale factor: 2
+[2024-06-25 21:37] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:37] Tile size: 512x512
+[2024-06-25 21:37] Tiles amount: 4
+[2024-06-25 21:37] Grid: 2x2
+[2024-06-25 21:37] Redraw enabled: True
+[2024-06-25 21:37] Seams fix mode: NONE
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.43it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.43it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.43it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:37] Restoring logging level to 20
+[2024-06-25 21:37] Prompt executed in 15.36 seconds
+[2024-06-25 21:37] got prompt
+[2024-06-25 21:37] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:37] python node runs
+[2024-06-25 21:37] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:37] 100%|██████████| 30/30 [00:02<00:00, 13.13it/s]100%|██████████| 30/30 [00:02<00:00, 13.06it/s]
+[2024-06-25 21:37] Canva size: 1024x1024
+[2024-06-25 21:37] Image size: 512x512
+[2024-06-25 21:37] Scale factor: 2
+[2024-06-25 21:37] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:37] Tile size: 512x512
+[2024-06-25 21:37] Tiles amount: 4
+[2024-06-25 21:37] Grid: 2x2
+[2024-06-25 21:37] Redraw enabled: True
+[2024-06-25 21:37] Seams fix mode: NONE
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.41it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:37] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:37] Restoring logging level to 20
+[2024-06-25 21:37] Prompt executed in 15.40 seconds
+[2024-06-25 21:37] got prompt
+[2024-06-25 21:37] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:37] python node runs
+[2024-06-25 21:37] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:38] 100%|██████████| 30/30 [00:02<00:00, 13.14it/s]100%|██████████| 30/30 [00:02<00:00, 13.12it/s]
+[2024-06-25 21:38] Canva size: 1024x1024
+[2024-06-25 21:38] Image size: 512x512
+[2024-06-25 21:38] Scale factor: 2
+[2024-06-25 21:38] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:38] Tile size: 512x512
+[2024-06-25 21:38] Tiles amount: 4
+[2024-06-25 21:38] Grid: 2x2
+[2024-06-25 21:38] Redraw enabled: True
+[2024-06-25 21:38] Seams fix mode: NONE
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.42it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:38] Restoring logging level to 20
+[2024-06-25 21:38] Prompt executed in 15.34 seconds
+[2024-06-25 21:38] got prompt
+[2024-06-25 21:38] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:38] python node runs
+[2024-06-25 21:38] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:38] 100%|██████████| 30/30 [00:02<00:00, 13.16it/s]100%|██████████| 30/30 [00:02<00:00, 13.10it/s]
+[2024-06-25 21:38] Canva size: 1024x1024
+[2024-06-25 21:38] Image size: 512x512
+[2024-06-25 21:38] Scale factor: 2
+[2024-06-25 21:38] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:38] Tile size: 512x512
+[2024-06-25 21:38] Tiles amount: 4
+[2024-06-25 21:38] Grid: 2x2
+[2024-06-25 21:38] Redraw enabled: True
+[2024-06-25 21:38] Seams fix mode: NONE
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:38] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:38] Restoring logging level to 20
+[2024-06-25 21:38] Prompt executed in 15.36 seconds
+[2024-06-25 21:40] got prompt
+[2024-06-25 21:40] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:40] python node runs
+[2024-06-25 21:40] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:40] 100%|██████████| 30/30 [00:02<00:00, 13.15it/s]100%|██████████| 30/30 [00:02<00:00, 13.16it/s]
+[2024-06-25 21:40] Canva size: 1024x1024
+[2024-06-25 21:40] Image size: 512x512
+[2024-06-25 21:40] Scale factor: 2
+[2024-06-25 21:40] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:40] Tile size: 512x512
+[2024-06-25 21:40] Tiles amount: 4
+[2024-06-25 21:40] Grid: 2x2
+[2024-06-25 21:40] Redraw enabled: True
+[2024-06-25 21:40] Seams fix mode: NONE
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.39it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:40] Restoring logging level to 20
+[2024-06-25 21:40] Prompt executed in 18.68 seconds
+[2024-06-25 21:40] got prompt
+[2024-06-25 21:40] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:40] python node runs
+[2024-06-25 21:40] Canva size: 1024x1024
+[2024-06-25 21:40] Image size: 512x512
+[2024-06-25 21:40] Scale factor: 2
+[2024-06-25 21:40] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:40] Tile size: 512x512
+[2024-06-25 21:40] Tiles amount: 4
+[2024-06-25 21:40] Grid: 2x2
+[2024-06-25 21:40] Redraw enabled: True
+[2024-06-25 21:40] Seams fix mode: NONE
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.42it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.41it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:40] Restoring logging level to 20
+[2024-06-25 21:40] Prompt executed in 10.78 seconds
+[2024-06-25 21:40] got prompt
+[2024-06-25 21:40] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:40] python node runs
+[2024-06-25 21:40] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:40] 100%|██████████| 30/30 [00:02<00:00, 13.06it/s]100%|██████████| 30/30 [00:02<00:00, 12.98it/s]
+[2024-06-25 21:40] Canva size: 1024x1024
+[2024-06-25 21:40] Image size: 512x512
+[2024-06-25 21:40] Scale factor: 2
+[2024-06-25 21:40] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:40] Tile size: 512x512
+[2024-06-25 21:40] Tiles amount: 4
+[2024-06-25 21:40] Grid: 2x2
+[2024-06-25 21:40] Redraw enabled: True
+[2024-06-25 21:40] Seams fix mode: NONE
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:40] 100%|██████████| 20/20 [00:01<00:00, 10.43it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:41] Restoring logging level to 20
+[2024-06-25 21:41] Prompt executed in 15.33 seconds
+[2024-06-25 21:41] got prompt
+[2024-06-25 21:41] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:41] python node runs
+[2024-06-25 21:41] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:41] 100%|██████████| 30/30 [00:02<00:00, 13.13it/s]100%|██████████| 30/30 [00:02<00:00, 13.09it/s]
+[2024-06-25 21:41] Canva size: 1024x1024
+[2024-06-25 21:41] Image size: 512x512
+[2024-06-25 21:41] Scale factor: 2
+[2024-06-25 21:41] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:41] Tile size: 512x512
+[2024-06-25 21:41] Tiles amount: 4
+[2024-06-25 21:41] Grid: 2x2
+[2024-06-25 21:41] Redraw enabled: True
+[2024-06-25 21:41] Seams fix mode: NONE
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:41] Restoring logging level to 20
+[2024-06-25 21:41] Prompt executed in 15.39 seconds
+[2024-06-25 21:41] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:41] python node runs
+[2024-06-25 21:41] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:41] 100%|██████████| 30/30 [00:02<00:00, 13.12it/s]100%|██████████| 30/30 [00:02<00:00, 13.11it/s]
+[2024-06-25 21:41] Canva size: 1024x1024
+[2024-06-25 21:41] Image size: 512x512
+[2024-06-25 21:41] Scale factor: 2
+[2024-06-25 21:41] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:41] Tile size: 512x512
+[2024-06-25 21:41] Tiles amount: 4
+[2024-06-25 21:41] Grid: 2x2
+[2024-06-25 21:41] Redraw enabled: True
+[2024-06-25 21:41] Seams fix mode: NONE
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:41] 100%|██████████| 20/20 [00:01<00:00, 10.41it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:41] Restoring logging level to 20
+[2024-06-25 21:41] Prompt executed in 15.39 seconds
+[2024-06-25 21:42] got prompt
+[2024-06-25 21:42] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:42] python node runs
+[2024-06-25 21:42] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:42] 100%|██████████| 30/30 [00:02<00:00, 13.15it/s]100%|██████████| 30/30 [00:02<00:00, 13.16it/s]
+[2024-06-25 21:42] Canva size: 1024x1024
+[2024-06-25 21:42] Image size: 512x512
+[2024-06-25 21:42] Scale factor: 2
+[2024-06-25 21:42] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:43] Tile size: 512x512
+[2024-06-25 21:43] Tiles amount: 4
+[2024-06-25 21:43] Grid: 2x2
+[2024-06-25 21:43] Redraw enabled: True
+[2024-06-25 21:43] Seams fix mode: NONE
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.42it/s]100%|██████████| 20/20 [00:01<00:00, 10.44it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.41it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:43] Restoring logging level to 20
+[2024-06-25 21:43] Prompt executed in 17.32 seconds
+[2024-06-25 21:43] got prompt
+[2024-06-25 21:43] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:43] python node runs
+[2024-06-25 21:43] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:43] 100%|██████████| 30/30 [00:02<00:00, 13.15it/s]100%|██████████| 30/30 [00:02<00:00, 13.09it/s]
+[2024-06-25 21:43] Canva size: 1024x1024
+[2024-06-25 21:43] Image size: 512x512
+[2024-06-25 21:43] Scale factor: 2
+[2024-06-25 21:43] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:43] Tile size: 512x512
+[2024-06-25 21:43] Tiles amount: 4
+[2024-06-25 21:43] Grid: 2x2
+[2024-06-25 21:43] Redraw enabled: True
+[2024-06-25 21:43] Seams fix mode: NONE
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.43it/s]
+[2024-06-25 21:43] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:43] Restoring logging level to 20
+[2024-06-25 21:43] Prompt executed in 15.31 seconds
+[2024-06-25 21:44] got prompt
+[2024-06-25 21:44] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:44] python node runs
+[2024-06-25 21:45] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:45] 100%|██████████| 30/30 [00:02<00:00, 13.14it/s]100%|██████████| 30/30 [00:02<00:00, 13.16it/s]
+[2024-06-25 21:45] Canva size: 1024x1024
+[2024-06-25 21:45] Image size: 512x512
+[2024-06-25 21:45] Scale factor: 2
+[2024-06-25 21:45] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:45] Tile size: 512x512
+[2024-06-25 21:45] Tiles amount: 4
+[2024-06-25 21:45] Grid: 2x2
+[2024-06-25 21:45] Redraw enabled: True
+[2024-06-25 21:45] Seams fix mode: NONE
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:45] Restoring logging level to 20
+[2024-06-25 21:45] Prompt executed in 19.28 seconds
+[2024-06-25 21:45] got prompt
+[2024-06-25 21:45] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:45] python node runs
+[2024-06-25 21:45] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:45] 100%|██████████| 30/30 [00:02<00:00, 13.16it/s]100%|██████████| 30/30 [00:02<00:00, 13.11it/s]
+[2024-06-25 21:45] Canva size: 1024x1024
+[2024-06-25 21:45] Image size: 512x512
+[2024-06-25 21:45] Scale factor: 2
+[2024-06-25 21:45] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:45] Tile size: 512x512
+[2024-06-25 21:45] Tiles amount: 4
+[2024-06-25 21:45] Grid: 2x2
+[2024-06-25 21:45] Redraw enabled: True
+[2024-06-25 21:45] Seams fix mode: NONE
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:45] 100%|██████████| 20/20 [00:01<00:00, 10.39it/s]100%|██████████| 20/20 [00:01<00:00, 10.42it/s]
+[2024-06-25 21:46] 100%|██████████| 20/20 [00:01<00:00, 10.39it/s]100%|██████████| 20/20 [00:01<00:00, 10.38it/s]
+[2024-06-25 21:46] Restoring logging level to 20
+[2024-06-25 21:46] Prompt executed in 15.37 seconds
+[2024-06-25 21:47] got prompt
+[2024-06-25 21:47] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:47] python node runs
+[2024-06-25 21:47] /opt/micromamba/envs/comfyui/lib/python3.10/site-packages/transformers/modeling_utils.py:977: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+[2024-06-25 21:47] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:47] 100%|██████████| 30/30 [00:02<00:00, 13.14it/s]100%|██████████| 30/30 [00:02<00:00, 13.16it/s]
+[2024-06-25 21:47] Canva size: 1024x1024
+[2024-06-25 21:47] Image size: 512x512
+[2024-06-25 21:47] Scale factor: 2
+[2024-06-25 21:47] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:47] Tile size: 512x512
+[2024-06-25 21:47] Tiles amount: 4
+[2024-06-25 21:47] Grid: 2x2
+[2024-06-25 21:47] Redraw enabled: True
+[2024-06-25 21:47] Seams fix mode: NONE
+[2024-06-25 21:47] 100%|██████████| 20/20 [00:01<00:00, 10.43it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:47] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:47] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:47] 100%|██████████| 20/20 [00:01<00:00, 10.39it/s]100%|██████████| 20/20 [00:01<00:00, 10.41it/s]
+[2024-06-25 21:47] Restoring logging level to 20
+[2024-06-25 21:47] Prompt executed in 16.28 seconds
+[2024-06-25 21:49] got prompt
+[2024-06-25 21:49] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:49] python node runs
+[2024-06-25 21:49] /opt/micromamba/envs/comfyui/lib/python3.10/site-packages/transformers/modeling_utils.py:977: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+[2024-06-25 21:49] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:49] 100%|██████████| 30/30 [00:02<00:00, 13.14it/s]100%|██████████| 30/30 [00:02<00:00, 13.16it/s]
+[2024-06-25 21:49] Canva size: 1024x1024
+[2024-06-25 21:49] Image size: 512x512
+[2024-06-25 21:49] Scale factor: 2
+[2024-06-25 21:49] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:49] Tile size: 512x512
+[2024-06-25 21:49] Tiles amount: 4
+[2024-06-25 21:49] Grid: 2x2
+[2024-06-25 21:49] Redraw enabled: True
+[2024-06-25 21:49] Seams fix mode: NONE
+[2024-06-25 21:49] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:49] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:49] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:49] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-25 21:49] Restoring logging level to 20
+[2024-06-25 21:49] Prompt executed in 16.14 seconds
+[2024-06-25 21:49] got prompt
+[2024-06-25 21:49] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-25 21:49] python node runs
+[2024-06-25 21:49] Warning: TAESD previews enabled, but could not find models/vae_approx/taesd_decoder
+[2024-06-25 21:49] 100%|██████████| 30/30 [00:02<00:00, 13.14it/s]100%|██████████| 30/30 [00:02<00:00, 13.06it/s]
+[2024-06-25 21:49] Canva size: 1024x1024
+[2024-06-25 21:49] Image size: 512x512
+[2024-06-25 21:49] Scale factor: 2
+[2024-06-25 21:49] Upscaling iteration 1 with scale factor 2
+[2024-06-25 21:49] Tile size: 512x512
+[2024-06-25 21:49] Tiles amount: 4
+[2024-06-25 21:49] Grid: 2x2
+[2024-06-25 21:49] Redraw enabled: True
+[2024-06-25 21:49] Seams fix mode: NONE
+[2024-06-25 21:50] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.46it/s]
+[2024-06-25 21:50] 100%|██████████| 20/20 [00:01<00:00, 10.45it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:50] 100%|██████████| 20/20 [00:01<00:00, 10.44it/s]100%|██████████| 20/20 [00:01<00:00, 10.45it/s]
+[2024-06-25 21:50] 100%|██████████| 20/20 [00:01<00:00, 10.40it/s]100%|██████████| 20/20 [00:01<00:00, 10.42it/s]
+[2024-06-25 21:50] Restoring logging level to 20
+[2024-06-25 21:50] Prompt executed in 15.30 seconds

@@ -1,5 +1,11 @@
-from kornia.filters import canny
+#From https://github.com/kornia/kornia
+import math
+
+import torch
+import torch.nn.functional as F
 import comfy.model_management
+
+from kornia.filters import canny
 
 
 class Canny:

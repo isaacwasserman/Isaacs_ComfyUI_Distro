@@ -18,6 +18,7 @@
 
 import torch
 from torch import nn
+import numpy as np
 import math
 from .common import AttnBlock, LayerNorm2d_op, ResBlock, FeedForwardBlock, TimestepBlock
 # from .controlnet import ControlNetDeliverer

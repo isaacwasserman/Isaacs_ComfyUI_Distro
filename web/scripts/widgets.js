@@ -229,11 +229,7 @@ function createIntWidget(node, inputName, inputData, app, isSeedInput) {
 			val,
 			function (v) {
 				const s = this.options.step / 10;
-				let sh = this.options.min % s;
-				if (isNaN(sh)) {
-					sh = 0;
-				}
-				this.value = Math.round((v - sh) / s) * s + sh;
+				this.value = Math.round(v / s) * s;
 			},
 			config
 		),
@@ -311,9 +307,7 @@ export const ComfyWidgets = {
 		return { widget: node.addWidget(widgetType, inputName, val,
 			function (v) {
 				if (config.round) {
-					this.value = Math.round((v + Number.EPSILON)/config.round)*config.round;
-					if (this.value > config.max) this.value = config.max;
-					if (this.value < config.min) this.value = config.min;
+					this.value = Math.round(v/config.round)*config.round;
 				} else {
 					this.value = v;
 				}

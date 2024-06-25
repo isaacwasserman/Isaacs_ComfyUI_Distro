@@ -1,4 +1,5 @@
 import torch
+import nodes
 import comfy.utils
 
 class SD_4XUpscale_Conditioning:

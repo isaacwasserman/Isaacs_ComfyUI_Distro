@@ -17,6 +17,7 @@
 """
 
 import math
+import numpy as np
 import torch
 from torch import nn
 from .common import AttnBlock, LayerNorm2d_op, ResBlock, FeedForwardBlock, TimestepBlock

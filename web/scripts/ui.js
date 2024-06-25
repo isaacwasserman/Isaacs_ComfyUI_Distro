@@ -6,22 +6,17 @@ import { ComfySettingsDialog } from "./ui/settings.js";
 export const ComfyDialog = _ComfyDialog;
 
 /**
- * @template { string | (keyof HTMLElementTagNameMap) } K
- * @typedef { K extends keyof HTMLElementTagNameMap ? HTMLElementTagNameMap[K] : HTMLElement } ElementType 
- */
-
-/**
- * @template { string | (keyof HTMLElementTagNameMap) } K 
- * @param { K } tag HTML Element Tag and optional classes e.g. div.class1.class2
- * @param { string | Element | Element[] | ({
+ * 
+ * @param { string } tag HTML Element Tag and optional classes e.g. div.class1.class2
+ * @param { string | Element | Element[] | {
  * 	 parent?: Element,
- *   $?: (el: ElementType<K>) => void, 
+ *   $?: (el: Element) => void, 
  *   dataset?: DOMStringMap,
- *   style?: Partial<CSSStyleDeclaration>,
+ *   style?: CSSStyleDeclaration,
  * 	 for?: string
- * } & Omit<Partial<ElementType<K>>, "style">) | undefined } [propsOrChildren]
- * @param { string | Element | Element[] | undefined } [children]
- * @returns { ElementType<K> }
+ * } | undefined } propsOrChildren 
+ * @param { Element[] | undefined } [children]
+ * @returns 
  */
 export function $el(tag, propsOrChildren, children) {
 	const split = tag.split(".");
@@ -59,7 +54,7 @@ export function $el(tag, propsOrChildren, children) {
 
 			Object.assign(element, propsOrChildren);
 			if (children) {
-				element.append(...(children instanceof Array ? children.filter(Boolean) : [children]));
+				element.append(...(children instanceof Array ? children : [children]));
 			}
 
 			if (parent) {
@@ -95,20 +90,15 @@ function dragElement(dragEl, settings) {
 	}).observe(dragEl);
 
 	function ensureInBounds() {
-		try {
+		if (dragEl.classList.contains("comfy-menu-manual-pos")) {
 			newPosX = Math.min(document.body.clientWidth - dragEl.clientWidth, Math.max(0, dragEl.offsetLeft));
 			newPosY = Math.min(document.body.clientHeight - dragEl.clientHeight, Math.max(0, dragEl.offsetTop));
 
 			positionElement();
 		}
-		catch(exception){
-			// robust
-		}
 	}
 
 	function positionElement() {
-		if(dragEl.style.display === "none") return;
-
 		const halfWidth = document.body.clientWidth / 2;
 		const anchorRight = newPosX + dragEl.clientWidth / 2 > halfWidth;
 
@@ -198,8 +188,6 @@ function dragElement(dragEl, settings) {
 		document.onmouseup = null;
 		document.onmousemove = null;
 	}
-
-	return restorePos;
 }
 
 class ComfyList {
@@ -237,7 +225,7 @@ class ComfyList {
 							$el("button", {
 								textContent: "Load",
 								onclick: async () => {
-									await app.loadGraphData(item.prompt[3].extra_pnginfo.workflow, true, false);
+									await app.loadGraphData(item.prompt[3].extra_pnginfo.workflow);
 									if (item.outputs) {
 										app.nodeOutputs = item.outputs;
 									}
@@ -380,8 +368,6 @@ export class ComfyUI {
 				app.handleFile(fileInput.files[0]);
 			},
 		});
-
-		this.loadFile = () => fileInput.click();
 
 		const autoQueueModeEl = toggleSwitch(
 			"autoQueueMode",
@@ -603,27 +589,19 @@ export class ComfyUI {
 				onclick: () => app.refreshComboInNodes()
 			}),
 			$el("button", {id: "comfy-clipspace-button", textContent: "Clipspace", onclick: () => app.openClipspace()}),
-			$el("button", {id: "comfy-reset-view-button", textContent: "Reset View", onclick: () => app.resetView()}),
 			$el("button", {
 				id: "comfy-clear-button", textContent: "Clear", onclick: () => {
 					if (!confirmClear.value || confirm("Clear workflow?")) {
 						app.clean();
 						app.graph.clear();
-						app.resetView();
 					}
 				}
 			}),
 			$el("button", {
 				id: "comfy-load-default-button", textContent: "Load Default", onclick: async () => {
 					if (!confirmClear.value || confirm("Load default workflow?")) {
-						app.resetView();
 						await app.loadGraphData()
 					}
-				}
-			}),
-			$el("button", {
-				id: "comfy-reset-view-button", textContent: "Reset View", onclick: async () => {
-					app.resetView();
 				}
 			}),
 		]);
@@ -633,10 +611,10 @@ export class ComfyUI {
 			name: "Enable Dev mode Options",
 			type: "boolean",
 			defaultValue: false,
-			onChange: function(value) { document.getElementById("comfy-dev-save-api-button").style.display = value ? "flex" : "none"},
+			onChange: function(value) { document.getElementById("comfy-dev-save-api-button").style.display = value ? "block" : "none"},
 		});
 
-		this.restoreMenuPosition = dragElement(this.menuContainer, this.settings);
+		dragElement(this.menuContainer, this.settings);
 
 		this.setStatus({exec_info: {queue_remaining: "X"}});
 	}
