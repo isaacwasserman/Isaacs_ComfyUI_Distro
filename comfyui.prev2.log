@@ -1,0 +1,154 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-06-27 18:43] ** ComfyUI startup time: 2024-06-27 18:43:46.857071
+[2024-06-27 18:43] ** Platform: Linux
+[2024-06-27 18:43] ** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[2024-06-27 18:43] ** Python executable: /usr/bin/python
+[2024-06-27 18:43] ** ComfyUI Path: /root/Isaacs_ComfyUI_Distro/main.py
+[2024-06-27 18:43] ** Log path: /root/Isaacs_ComfyUI_Distro/comfyui.log
+[2024-06-27 18:43] 
+Prestartup times for custom nodes:
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-27 18:43]    1.1 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-27 18:43] 
+Total VRAM 10009 MB, total RAM 257830 MB
+[2024-06-27 18:43] Set vram state to: NORMAL_VRAM
+[2024-06-27 18:43] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
+[2024-06-27 18:43] VAE dtype: torch.bfloat16
+[2024-06-27 18:43] Using pytorch cross attention
+[2024-06-27 18:43] Total VRAM 10009 MB, total RAM 257830 MB
+[2024-06-27 18:43] Set vram state to: NORMAL_VRAM
+[2024-06-27 18:43] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
+[2024-06-27 18:43] VAE dtype: torch.bfloat16
+[2024-06-27 18:43] ### Loading: ComfyUI-Manager (V2.43)
+[2024-06-27 18:43] ### ComfyUI Revision: 2286 on 'main' [8a6175b7] | Released on '2024-06-25'
+[2024-06-27 18:43] Adding /root/Isaacs_ComfyUI_Distro/custom_nodes to sys.path
+[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-06-27 18:43] Could not find efficiency nodes
+[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-27 18:43] /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-06-27 18:43] Loaded ControlNetPreprocessors nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-27 18:43] Could not find AdvancedControlNet nodes
+[2024-06-27 18:43] Could not find AnimateDiff nodes
+[2024-06-27 18:43] Loaded IPAdapter nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-27 18:43] Could not find VideoHelperSuite nodes
+[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:43] Loaded ImpactPack nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:43] Web extensions folder found at /root/Isaacs_ComfyUI_Distro/web/extensions/ComfyLiterals
+[2024-06-27 18:43] no module 'xformers'. Processing without...
+[2024-06-27 18:43] no module 'xformers'. Processing without...
+[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:43] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-27 18:43] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-27 18:43] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-06-27 18:43] 
+	[3m[93m"Art is the magic that brings beauty into the world."[0m[3m - Unknown[0m
+[2024-06-27 18:43] 
+[2024-06-27 18:43] 
+[2024-06-27 18:43] [92m[rgthree] Loaded 40 epic nodes.[0m
+[2024-06-27 18:43] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-27 18:43] 
+[2024-06-27 18:43] 
+Import times for custom nodes:
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/websocket_image_save.py
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/TinkerBot-tech-for-ComfyUI-Touchpad
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Logic
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/cg-use-everywhere
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-fitsize
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-nodes
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyLiterals
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_essentials
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Shinsplat
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-various
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-IC-Light
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-KJNodes
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-pants
+[2024-06-27 18:43]    0.1 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-27 18:43]    0.3 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_segment_anything
+[2024-06-27 18:43]    0.5 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture
+[2024-06-27 18:43]    0.9 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-YOLO
+[2024-06-27 18:43]    1.7 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-SUPIR
+[2024-06-27 18:43]    1.8 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui
+[2024-06-27 18:43] 
+[2024-06-27 18:43] Starting server
+
+[2024-06-27 18:43] To see the GUI go to: http://127.0.0.1:8188
+[2024-06-27 18:44] FETCH DATA from: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-27 18:44] got prompt
+[2024-06-27 18:44] Failed to validate prompt for output 66:
+[2024-06-27 18:44] * UpscaleModelLoader 65:
+[2024-06-27 18:44]   - Value not in list: model_name: '4x-Ultrasharp.pth' not in []
+[2024-06-27 18:44] Output will be ignored
+[2024-06-27 18:44] Failed to validate prompt for output 82:
+[2024-06-27 18:44] Output will be ignored
+[2024-06-27 18:44] Failed to validate prompt for output 102:
+[2024-06-27 18:44] Output will be ignored
+[2024-06-27 18:44] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 18:44] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
+[2024-06-27 18:44] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
+[2024-06-27 18:44] python node runs
+[2024-06-27 18:44] Downloading models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+[2024-06-27 18:44] Downloading models/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors
+[2024-06-27 18:44] Downloading models/ipadapter/ip-adapter_sd15.safetensors
+[2024-06-27 18:44] Downloading models/embeddings/UnrealisticDream.pt
+[2024-06-27 18:44] Downloading models/upscale_models/4x-Ultrasharp.pth
+[2024-06-27 18:44] [1m[34m[CivitAI] [0mDownloading `realisticVisionV60B1_v51HyperInpaintVAE.safetensors` from `https://civitai.com/api/download/models/501286?token=cb1d2ff46eb35b2317b1d2f0f22e0393`
+[2024-06-27 18:47] 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1.98G/1.99G [02:32<00:00, 18.6MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1.98G/1.99G [02:32<00:00, 19.2MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 1.98G/1.99G [02:32<00:00, 19.7MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 1.98G/1.99G [02:32<00:00, 20.0MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌| 1.98G/1.99G [02:32<00:00, 19.8MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 1.98G/1.99G [02:32<00:00, 20.0MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊| 1.98G/1.99G [02:32<00:00, 20.2MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 1.99G/1.99G [02:32<00:00, 20.0MB/s]1.99GB [02:37, 13.5MB/s]                                                                                                                                                                   
+[2024-06-27 18:48] [1m[34m[CivitAI] [0mLoading Checkpoint: realisticVisionV60B1_v51HyperInpaintVAE.safetensors (https://civitai.com/models/4201/?modelVersionId=501286)
+[2024-06-27 18:48] [1m[34m[CivitAI] [0mCheckpoint SHA256: CB372C879506C865B000BAA3944CC8A4C7E8E3248D2150634989E9F9B6448AA4
+[2024-06-27 18:48] model_type EPS
+[2024-06-27 18:48] Using pytorch attention in VAE
+[2024-06-27 18:48] Using pytorch attention in VAE
+[2024-06-27 18:48] clip missing: ['clip_l.logit_scale', 'clip_l.transformer.text_projection.weight']
+[2024-06-27 18:48] Requested to load SD1ClipModel
+[2024-06-27 18:48] Loading 1 new model
+[2024-06-27 18:48] using extra model: /root/Isaacs_ComfyUI_Distro/models/sams/sam_vit_b_01ec64.pth
+[2024-06-27 18:48] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinT_OGC.cfg.py to /root/Isaacs_ComfyUI_Distro/models/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py
+[2024-06-27 18:48] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 0.98k/0.98k [00:00<00:00, 201kB/s]
+[2024-06-27 18:48] final text_encoder_type: bert-base-uncased
+[2024-06-27 18:48] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth to /root/Isaacs_ComfyUI_Distro/models/grounding-dino/groundingdino_swint_ogc.pth
+[2024-06-27 18:48] 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 662M/662M [00:05<00:00, 128MB/s]
+[2024-06-27 18:48] /usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py:1060: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+[2024-06-27 18:48] Requested to load AutoencoderKL
+[2024-06-27 18:48] Loading 1 new model
+[2024-06-27 18:48] Requested to load BaseModel
+[2024-06-27 18:48] Loading 1 new model
+[2024-06-27 18:48] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00, 10.17it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  8.28it/s]
+[2024-06-27 18:48] Prompt executed in 259.74 seconds
+[2024-06-27 18:50] got prompt
+[2024-06-27 18:50] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 18:50] python node runs
+[2024-06-27 18:50] Canva size: 1024x1024
+[2024-06-27 18:50] Image size: 512x512
+[2024-06-27 18:50] Scale factor: 2
+[2024-06-27 18:50] Upscaling iteration 1 with scale factor 2
+[2024-06-27 18:50] Tile size: 512x512
+[2024-06-27 18:50] Tiles amount: 4
+[2024-06-27 18:50] Grid: 2x2
+[2024-06-27 18:50] Redraw enabled: True
+[2024-06-27 18:50] Seams fix mode: NONE
+[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.60it/s]
+[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.72it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.61it/s]
+[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00, 11.23it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  6.48it/s]
+[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.83it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.54it/s]
+[2024-06-27 18:50] Prompt executed in 15.73 seconds
+[2024-06-27 18:55] FETCH DATA from: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-27 18:57] 
+Stopped server

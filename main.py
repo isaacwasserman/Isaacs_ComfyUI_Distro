@@ -233,11 +233,18 @@ if __name__ == "__main__":
     for uninstalled_custom_node_repo_url in not_installed_custom_node_repo_urls:
         print(f"Cloning custom node repo: {uninstalled_custom_node_repo_url}")
         subprocess.run(
-            ["git", "clone", uninstalled_custom_node_repo_url],
+            ["git", "clone", uninstalled_custom_node_repo_url, "--recursive"],
             cwd="custom_nodes",
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
+        result = subprocess.run(
+            ["pip", "install", "-r", uninstalled_custom_node_repo_url.split("/")[-1] + "/requirements.txt"],
+            cwd="custom_nodes",
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        print(result.stdout.decode("utf-8"), result.stderr.decode("utf-8"))
 
     if args.temp_directory:
         temp_dir = os.path.join(os.path.abspath(args.temp_directory), "temp")
