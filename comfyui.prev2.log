@@ -1,154 +1,430 @@
 ## ComfyUI-Manager: installing dependencies done.
-[2024-06-27 18:43] ** ComfyUI startup time: 2024-06-27 18:43:46.857071
-[2024-06-27 18:43] ** Platform: Linux
-[2024-06-27 18:43] ** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
-[2024-06-27 18:43] ** Python executable: /usr/bin/python
-[2024-06-27 18:43] ** ComfyUI Path: /root/Isaacs_ComfyUI_Distro/main.py
-[2024-06-27 18:43] ** Log path: /root/Isaacs_ComfyUI_Distro/comfyui.log
-[2024-06-27 18:43] 
+[2024-06-27 18:59] ** ComfyUI startup time: 2024-06-27 18:59:16.121978
+[2024-06-27 18:59] ** Platform: Linux
+[2024-06-27 18:59] ** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[2024-06-27 18:59] ** Python executable: /usr/bin/python
+[2024-06-27 18:59] ** ComfyUI Path: /root/Isaacs_ComfyUI_Distro/main.py
+[2024-06-27 18:59] ** Log path: /root/Isaacs_ComfyUI_Distro/comfyui.log
+[2024-06-27 18:59] 
 Prestartup times for custom nodes:
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
-[2024-06-27 18:43]    1.1 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
-[2024-06-27 18:43] 
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-27 18:59]    1.1 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-27 18:59] 
 Total VRAM 10009 MB, total RAM 257830 MB
-[2024-06-27 18:43] Set vram state to: NORMAL_VRAM
-[2024-06-27 18:43] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
-[2024-06-27 18:43] VAE dtype: torch.bfloat16
-[2024-06-27 18:43] Using pytorch cross attention
-[2024-06-27 18:43] Total VRAM 10009 MB, total RAM 257830 MB
-[2024-06-27 18:43] Set vram state to: NORMAL_VRAM
-[2024-06-27 18:43] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
-[2024-06-27 18:43] VAE dtype: torch.bfloat16
-[2024-06-27 18:43] ### Loading: ComfyUI-Manager (V2.43)
-[2024-06-27 18:43] ### ComfyUI Revision: 2286 on 'main' [8a6175b7] | Released on '2024-06-25'
-[2024-06-27 18:43] Adding /root/Isaacs_ComfyUI_Distro/custom_nodes to sys.path
-[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
-[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-[2024-06-27 18:43] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-[2024-06-27 18:43] Could not find efficiency nodes
-[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts[0m
-[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
-[2024-06-27 18:43] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
-[2024-06-27 18:43] /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+[2024-06-27 18:59] Set vram state to: NORMAL_VRAM
+[2024-06-27 18:59] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
+[2024-06-27 18:59] VAE dtype: torch.bfloat16
+[2024-06-27 18:59] Using pytorch cross attention
+[2024-06-27 18:59] Total VRAM 10009 MB, total RAM 257830 MB
+[2024-06-27 18:59] Set vram state to: NORMAL_VRAM
+[2024-06-27 18:59] Device: cuda:0 NVIDIA GeForce RTX 3080 : cudaMallocAsync
+[2024-06-27 18:59] VAE dtype: torch.bfloat16
+[2024-06-27 18:59] ### Loading: ComfyUI-Manager (V2.43)
+[2024-06-27 18:59] ### ComfyUI Revision: 2286 on 'main' [8a6175b7] | Released on '2024-06-25'
+[2024-06-27 18:59] Adding /root/Isaacs_ComfyUI_Distro/custom_nodes to sys.path
+[2024-06-27 18:59] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-06-27 18:59] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-06-27 18:59] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-06-27 18:59] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-06-27 18:59] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-06-27 18:59] Could not find efficiency nodes
+[2024-06-27 18:59] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-27 18:59] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-27 18:59] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-27 18:59] /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
   warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
-[2024-06-27 18:43] Loaded ControlNetPreprocessors nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
-[2024-06-27 18:43] Could not find AdvancedControlNet nodes
-[2024-06-27 18:43] Could not find AnimateDiff nodes
-[2024-06-27 18:43] Loaded IPAdapter nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
-[2024-06-27 18:43] Could not find VideoHelperSuite nodes
-[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
-[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
-[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
-[2024-06-27 18:43] Loaded ImpactPack nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
-[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
-[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
-[2024-06-27 18:43] Web extensions folder found at /root/Isaacs_ComfyUI_Distro/web/extensions/ComfyLiterals
-[2024-06-27 18:43] no module 'xformers'. Processing without...
-[2024-06-27 18:43] no module 'xformers'. Processing without...
-[2024-06-27 18:43] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
-[2024-06-27 18:43] [Impact Pack] Wildcards loading done.
-[2024-06-27 18:43] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
-[2024-06-27 18:43] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
-[2024-06-27 18:43] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
-[2024-06-27 18:43] 
-	[3m[93m"Art is the magic that brings beauty into the world."[0m[3m - Unknown[0m
-[2024-06-27 18:43] 
-[2024-06-27 18:43] 
-[2024-06-27 18:43] [92m[rgthree] Loaded 40 epic nodes.[0m
-[2024-06-27 18:43] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
-[2024-06-27 18:43] 
-[2024-06-27 18:43] 
+[2024-06-27 18:59] Loaded ControlNetPreprocessors nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-27 18:59] Could not find AdvancedControlNet nodes
+[2024-06-27 18:59] Could not find AnimateDiff nodes
+[2024-06-27 18:59] Loaded IPAdapter nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-27 18:59] Could not find VideoHelperSuite nodes
+[2024-06-27 18:59] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:59] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-06-27 18:59] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:59] Loaded ImpactPack nodes from /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-27 18:59] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:59] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:59] Web extensions folder found at /root/Isaacs_ComfyUI_Distro/web/extensions/ComfyLiterals
+[2024-06-27 18:59] no module 'xformers'. Processing without...
+[2024-06-27 18:59] no module 'xformers'. Processing without...
+[2024-06-27 18:59] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-27 18:59] [Impact Pack] Wildcards loading done.
+[2024-06-27 18:59] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-27 18:59] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-27 18:59] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-06-27 18:59] 
+	[3m[93m"Believe in yourself, take on your challenges, and dig deep within yourself to conquer fears."[0m[3m - Chantal Sutherland[0m
+[2024-06-27 18:59] 
+[2024-06-27 18:59] 
+[2024-06-27 18:59] [92m[rgthree] Loaded 40 fantastic nodes.[0m
+[2024-06-27 18:59] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-27 18:59] 
+[2024-06-27 18:59] 
 Import times for custom nodes:
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/websocket_image_save.py
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/TinkerBot-tech-for-ComfyUI-Touchpad
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Logic
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/cg-use-everywhere
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-fitsize
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-nodes
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyLiterals
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_essentials
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Shinsplat
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-various
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-IC-Light
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-KJNodes
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_UltimateSDUpscale
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
-[2024-06-27 18:43]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-pants
-[2024-06-27 18:43]    0.1 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
-[2024-06-27 18:43]    0.3 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_segment_anything
-[2024-06-27 18:43]    0.5 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture
-[2024-06-27 18:43]    0.9 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-YOLO
-[2024-06-27 18:43]    1.7 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-SUPIR
-[2024-06-27 18:43]    1.8 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui
-[2024-06-27 18:43] 
-[2024-06-27 18:43] Starting server
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/websocket_image_save.py
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/TinkerBot-tech-for-ComfyUI-Touchpad
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-fitsize
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/cg-use-everywhere
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Logic
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-nodes
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyLiterals
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_essentials
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Shinsplat
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-various
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-IC-Light
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-KJNodes
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfy-pants
+[2024-06-27 18:59]    0.0 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-27 18:59]    0.3 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_segment_anything
+[2024-06-27 18:59]    0.5 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture
+[2024-06-27 18:59]    0.9 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-YOLO
+[2024-06-27 18:59]    1.6 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-SUPIR
+[2024-06-27 18:59]    1.9 seconds: /root/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui
+[2024-06-27 18:59] 
+[2024-06-27 18:59] Starting server
 
-[2024-06-27 18:43] To see the GUI go to: http://127.0.0.1:8188
-[2024-06-27 18:44] FETCH DATA from: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
-[2024-06-27 18:44] got prompt
-[2024-06-27 18:44] Failed to validate prompt for output 66:
-[2024-06-27 18:44] * UpscaleModelLoader 65:
-[2024-06-27 18:44]   - Value not in list: model_name: '4x-Ultrasharp.pth' not in []
-[2024-06-27 18:44] Output will be ignored
-[2024-06-27 18:44] Failed to validate prompt for output 82:
-[2024-06-27 18:44] Output will be ignored
-[2024-06-27 18:44] Failed to validate prompt for output 102:
-[2024-06-27 18:44] Output will be ignored
-[2024-06-27 18:44] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-06-27 18:44] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
-[2024-06-27 18:44] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
-[2024-06-27 18:44] python node runs
-[2024-06-27 18:44] Downloading models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
-[2024-06-27 18:44] Downloading models/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors
-[2024-06-27 18:44] Downloading models/ipadapter/ip-adapter_sd15.safetensors
-[2024-06-27 18:44] Downloading models/embeddings/UnrealisticDream.pt
-[2024-06-27 18:44] Downloading models/upscale_models/4x-Ultrasharp.pth
-[2024-06-27 18:44] [1m[34m[CivitAI] [0mDownloading `realisticVisionV60B1_v51HyperInpaintVAE.safetensors` from `https://civitai.com/api/download/models/501286?token=cb1d2ff46eb35b2317b1d2f0f22e0393`
-[2024-06-27 18:47] 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1.98G/1.99G [02:32<00:00, 18.6MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1.98G/1.99G [02:32<00:00, 19.2MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 1.98G/1.99G [02:32<00:00, 19.7MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 1.98G/1.99G [02:32<00:00, 20.0MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌| 1.98G/1.99G [02:32<00:00, 19.8MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 1.98G/1.99G [02:32<00:00, 20.0MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊| 1.98G/1.99G [02:32<00:00, 20.2MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 1.99G/1.99G [02:32<00:00, 20.0MB/s]1.99GB [02:37, 13.5MB/s]                                                                                                                                                                   
-[2024-06-27 18:48] [1m[34m[CivitAI] [0mLoading Checkpoint: realisticVisionV60B1_v51HyperInpaintVAE.safetensors (https://civitai.com/models/4201/?modelVersionId=501286)
-[2024-06-27 18:48] [1m[34m[CivitAI] [0mCheckpoint SHA256: CB372C879506C865B000BAA3944CC8A4C7E8E3248D2150634989E9F9B6448AA4
-[2024-06-27 18:48] model_type EPS
-[2024-06-27 18:48] Using pytorch attention in VAE
-[2024-06-27 18:48] Using pytorch attention in VAE
-[2024-06-27 18:48] clip missing: ['clip_l.logit_scale', 'clip_l.transformer.text_projection.weight']
-[2024-06-27 18:48] Requested to load SD1ClipModel
-[2024-06-27 18:48] Loading 1 new model
-[2024-06-27 18:48] using extra model: /root/Isaacs_ComfyUI_Distro/models/sams/sam_vit_b_01ec64.pth
-[2024-06-27 18:48] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinT_OGC.cfg.py to /root/Isaacs_ComfyUI_Distro/models/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py
-[2024-06-27 18:48] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 0.98k/0.98k [00:00<00:00, 201kB/s]
-[2024-06-27 18:48] final text_encoder_type: bert-base-uncased
-[2024-06-27 18:48] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth to /root/Isaacs_ComfyUI_Distro/models/grounding-dino/groundingdino_swint_ogc.pth
-[2024-06-27 18:48] 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 662M/662M [00:05<00:00, 128MB/s]
-[2024-06-27 18:48] /usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py:1060: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+[2024-06-27 18:59] To see the GUI go to: http://127.0.0.1:8188
+[2024-06-27 18:59] FETCH DATA from: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-27 19:00] got prompt
+[2024-06-27 19:00] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:00] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
+[2024-06-27 19:00] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
+[2024-06-27 19:00] python node runs
+[2024-06-27 19:00] [1m[34m[CivitAI] [0mLoading Checkpoint: realisticVisionV60B1_v51HyperInpaintVAE.safetensors (https://civitai.com/models/4201/?modelVersionId=418955)
+[2024-06-27 19:00] [1m[34m[CivitAI] [0mCheckpoint SHA256: CB372C879506C865B000BAA3944CC8A4C7E8E3248D2150634989E9F9B6448AA4
+[2024-06-27 19:00] [1m[34m[CivitAI] [0mLoading Checkpoint from disk: /root/Isaacs_ComfyUI_Distro/models/checkpoints/realisticVisionV60B1_v51HyperInpaintVAE.safetensors
+[2024-06-27 19:00] model_type EPS
+[2024-06-27 19:00] Using pytorch attention in VAE
+[2024-06-27 19:00] Using pytorch attention in VAE
+[2024-06-27 19:00] clip missing: ['clip_l.logit_scale', 'clip_l.transformer.text_projection.weight']
+[2024-06-27 19:00] Requested to load SD1ClipModel
+[2024-06-27 19:00] Loading 1 new model
+[2024-06-27 19:00] using extra model: /root/Isaacs_ComfyUI_Distro/models/sams/sam_vit_b_01ec64.pth
+[2024-06-27 19:00] final text_encoder_type: bert-base-uncased
+[2024-06-27 19:00] /usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py:1060: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
   warnings.warn(
-[2024-06-27 18:48] Requested to load AutoencoderKL
-[2024-06-27 18:48] Loading 1 new model
-[2024-06-27 18:48] Requested to load BaseModel
-[2024-06-27 18:48] Loading 1 new model
-[2024-06-27 18:48] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00, 10.17it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  8.28it/s]
-[2024-06-27 18:48] Prompt executed in 259.74 seconds
-[2024-06-27 18:50] got prompt
-[2024-06-27 18:50] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-06-27 18:50] python node runs
-[2024-06-27 18:50] Canva size: 1024x1024
-[2024-06-27 18:50] Image size: 512x512
-[2024-06-27 18:50] Scale factor: 2
-[2024-06-27 18:50] Upscaling iteration 1 with scale factor 2
-[2024-06-27 18:50] Tile size: 512x512
-[2024-06-27 18:50] Tiles amount: 4
-[2024-06-27 18:50] Grid: 2x2
-[2024-06-27 18:50] Redraw enabled: True
-[2024-06-27 18:50] Seams fix mode: NONE
-[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.60it/s]
-[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.72it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.61it/s]
-[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00, 11.23it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  6.48it/s]
-[2024-06-27 18:50] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.83it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.54it/s]
-[2024-06-27 18:50] Prompt executed in 15.73 seconds
-[2024-06-27 18:55] FETCH DATA from: /root/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
-[2024-06-27 18:57] 
+[2024-06-27 19:00] Requested to load AutoencoderKL
+[2024-06-27 19:00] Loading 1 new model
+[2024-06-27 19:00] Requested to load BaseModel
+[2024-06-27 19:00] Loading 1 new model
+[2024-06-27 19:01] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:04<00:00,  6.98it/s]
+[2024-06-27 19:01] Canva size: 1024x1024
+[2024-06-27 19:01] Image size: 512x512
+[2024-06-27 19:01] Scale factor: 2
+[2024-06-27 19:01] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:01] Tile size: 512x512
+[2024-06-27 19:01] Tiles amount: 4
+[2024-06-27 19:01] Grid: 2x2
+[2024-06-27 19:01] Redraw enabled: True
+[2024-06-27 19:01] Seams fix mode: NONE
+[2024-06-27 19:01] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.22it/s]
+[2024-06-27 19:01] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.44it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.59it/s]
+[2024-06-27 19:01] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.21it/s]
+[2024-06-27 19:01] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.92it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.55it/s]
+[2024-06-27 19:01] Prompt executed in 54.85 seconds
+[2024-06-27 19:02] got prompt
+[2024-06-27 19:02] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:02] python node runs
+[2024-06-27 19:02] Canva size: 1024x1024
+[2024-06-27 19:02] Image size: 512x512
+[2024-06-27 19:02] Scale factor: 2
+[2024-06-27 19:02] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:02] Tile size: 512x512
+[2024-06-27 19:02] Tiles amount: 4
+[2024-06-27 19:02] Grid: 2x2
+[2024-06-27 19:02] Redraw enabled: True
+[2024-06-27 19:02] Seams fix mode: NONE
+[2024-06-27 19:02] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.07it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.76it/s]
+[2024-06-27 19:02] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.62it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.92it/s]
+[2024-06-27 19:02] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.52it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.58it/s]
+[2024-06-27 19:02] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.99it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.88it/s]
+[2024-06-27 19:02] Prompt executed in 10.97 seconds
+[2024-06-27 19:03] got prompt
+[2024-06-27 19:03] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:03] python node runs
+[2024-06-27 19:03] Canva size: 1024x1024
+[2024-06-27 19:03] Image size: 512x512
+[2024-06-27 19:03] Scale factor: 2
+[2024-06-27 19:03] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:03] Tile size: 512x512
+[2024-06-27 19:03] Tiles amount: 4
+[2024-06-27 19:03] Grid: 2x2
+[2024-06-27 19:03] Redraw enabled: True
+[2024-06-27 19:03] Seams fix mode: NONE
+[2024-06-27 19:03] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.62it/s]
+[2024-06-27 19:03] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.75it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.40it/s]
+[2024-06-27 19:03] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.46it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.15it/s]
+[2024-06-27 19:03] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.66it/s]
+[2024-06-27 19:03] Prompt executed in 12.35 seconds
+[2024-06-27 19:05] got prompt
+[2024-06-27 19:05] Failed to validate prompt for output 102:
+[2024-06-27 19:05] * UltimateSDUpscale 84:
+[2024-06-27 19:05]   - Required input is missing: image
+[2024-06-27 19:05] Output will be ignored
+[2024-06-27 19:05] Failed to validate prompt for output 82:
+[2024-06-27 19:05] Output will be ignored
+[2024-06-27 19:05] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:05] python node runs
+[2024-06-27 19:05] Failed to find /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth.
+ Downloading from huggingface.co
+[2024-06-27 19:05] cacher folder is /tmp, you can change it by custom_tmp_path in config.yaml
+[2024-06-27 19:05] /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-27 19:05] /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:1194: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+[2024-06-27 19:05] [Errno 2] No such file or directory: '/tmp/ckpts'
+[2024-06-27 19:05] model_path is /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth
+[2024-06-27 19:05] Prompt executed in 1.62 seconds
+[2024-06-27 19:06] got prompt
+[2024-06-27 19:06] Failed to validate prompt for output 102:
+[2024-06-27 19:06] * UltimateSDUpscale 84:
+[2024-06-27 19:06]   - Required input is missing: image
+[2024-06-27 19:06] Output will be ignored
+[2024-06-27 19:06] Failed to validate prompt for output 82:
+[2024-06-27 19:06] Output will be ignored
+[2024-06-27 19:06] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:06] python node runs
+[2024-06-27 19:06] model_path is /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth
+[2024-06-27 19:06] Prompt executed in 0.25 seconds
+[2024-06-27 19:06] got prompt
+[2024-06-27 19:06] Failed to validate prompt for output 102:
+[2024-06-27 19:06] * UltimateSDUpscale 84:
+[2024-06-27 19:06]   - Required input is missing: image
+[2024-06-27 19:06] Output will be ignored
+[2024-06-27 19:06] Failed to validate prompt for output 82:
+[2024-06-27 19:06] Output will be ignored
+[2024-06-27 19:06] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:06] python node runs
+[2024-06-27 19:06] model_path is /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth
+[2024-06-27 19:06] Prompt executed in 0.33 seconds
+[2024-06-27 19:12] got prompt
+[2024-06-27 19:12] Failed to validate prompt for output 102:
+[2024-06-27 19:12] * UltimateSDUpscale 84:
+[2024-06-27 19:12]   - Required input is missing: image
+[2024-06-27 19:12] Output will be ignored
+[2024-06-27 19:12] Failed to validate prompt for output 82:
+[2024-06-27 19:12] Output will be ignored
+[2024-06-27 19:12] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:12] python node runs
+[2024-06-27 19:12] Prompt executed in 0.03 seconds
+[2024-06-27 19:15] got prompt
+[2024-06-27 19:15] Failed to validate prompt for output 102:
+[2024-06-27 19:15] * UltimateSDUpscale 84:
+[2024-06-27 19:15]   - Required input is missing: image
+[2024-06-27 19:15] Output will be ignored
+[2024-06-27 19:15] Failed to validate prompt for output 82:
+[2024-06-27 19:15] Output will be ignored
+[2024-06-27 19:15] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:15] python node runs
+[2024-06-27 19:15] Downloading models/controlnet/control_v11p_sd15_softedge.pth
+[2024-06-27 19:16] Downloading models/controlnet/control_v11p_sd15_canny.pth
+[2024-06-27 19:16] Prompt executed in 59.79 seconds
+[2024-06-27 19:16] [Impact Pack] Wildcards loading done.
+[2024-06-27 19:18] got prompt
+[2024-06-27 19:18] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:18] python node runs
+[2024-06-27 19:18] Requested to load ControlNet
+[2024-06-27 19:18] Loading 1 new model
+[2024-06-27 19:18] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  7.80it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  7.73it/s]
+[2024-06-27 19:18] Canva size: 1024x1024
+[2024-06-27 19:18] Image size: 512x512
+[2024-06-27 19:18] Scale factor: 2
+[2024-06-27 19:18] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:18] Tile size: 512x512
+[2024-06-27 19:18] Tiles amount: 4
+[2024-06-27 19:18] Grid: 2x2
+[2024-06-27 19:18] Redraw enabled: True
+[2024-06-27 19:18] Seams fix mode: NONE
+[2024-06-27 19:19] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  2.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.02it/s]
+[2024-06-27 19:19] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.05it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.06it/s]
+[2024-06-27 19:19] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.08it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.16it/s]
+[2024-06-27 19:19] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.44it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.14it/s]
+[2024-06-27 19:19] Prompt executed in 38.00 seconds
+[2024-06-27 19:20] got prompt
+[2024-06-27 19:20] Failed to validate prompt for output 102:
+[2024-06-27 19:20] * Morphology 117:
+[2024-06-27 19:20]   - Value 2 smaller than min of 3: kernel_size
+[2024-06-27 19:20] Output will be ignored
+[2024-06-27 19:20] Failed to validate prompt for output 112:
+[2024-06-27 19:20] Output will be ignored
+[2024-06-27 19:20] Failed to validate prompt for output 82:
+[2024-06-27 19:20] Output will be ignored
+[2024-06-27 19:20] Failed to validate prompt for output 66:
+[2024-06-27 19:20] Output will be ignored
+[2024-06-27 19:20] Failed to validate prompt for output 9:
+[2024-06-27 19:20] Output will be ignored
+[2024-06-27 19:20] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:20] python node runs
+[2024-06-27 19:20] model_path is /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth
+[2024-06-27 19:20] Prompt executed in 1.21 seconds
+[2024-06-27 19:20] got prompt
+[2024-06-27 19:20] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:20] python node runs
+[2024-06-27 19:20] model_path is /root/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts/lllyasviel/Annotators/ControlNetHED.pth
+[2024-06-27 19:20] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  7.60it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:03<00:00,  7.92it/s]
+[2024-06-27 19:20] Canva size: 1024x1024
+[2024-06-27 19:20] Image size: 512x512
+[2024-06-27 19:20] Scale factor: 2
+[2024-06-27 19:20] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:20] Tile size: 512x512
+[2024-06-27 19:20] Tiles amount: 4
+[2024-06-27 19:20] Grid: 2x2
+[2024-06-27 19:20] Redraw enabled: True
+[2024-06-27 19:20] Seams fix mode: NONE
+[2024-06-27 19:20] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.26it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.39it/s]
+[2024-06-27 19:21] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  1.34it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.78it/s]
+[2024-06-27 19:21] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  1.85it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.32it/s]
+[2024-06-27 19:21] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.34it/s]
+[2024-06-27 19:21] Prompt executed in 33.46 seconds
+[2024-06-27 19:28] got prompt
+[2024-06-27 19:28] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:28] python node runs
+[2024-06-27 19:28] Canva size: 4096x4096
+[2024-06-27 19:28] Image size: 2048x2048
+[2024-06-27 19:28] Scale factor: 2
+[2024-06-27 19:28] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:28] Tile size: 512x512
+[2024-06-27 19:28] Tiles amount: 64
+[2024-06-27 19:28] Grid: 8x8
+[2024-06-27 19:28] Redraw enabled: True
+[2024-06-27 19:28] Seams fix mode: NONE
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  2.16it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.19it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.50it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.41it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.26it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.29it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.61it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.50it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  1.87it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.51it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.22it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.36it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.99it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.57it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  5.03it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.93it/s]
+[2024-06-27 19:29] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.60it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.27it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  1.26it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.67it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  2.37it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.63it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.90it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.67it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.23it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.55it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.83it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.68it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.35it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.36it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  4.50it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.24it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.62it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.59it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.29it/s]
+[2024-06-27 19:30] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.54it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.62it/s]
+[2024-06-27 19:31] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.10it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.21it/s]
+[2024-06-27 19:31] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  4.57it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.72it/s]
+[2024-06-27 19:31] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  3.87it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.06it/s]
+[2024-06-27 19:31] 
+[2024-06-27 19:31] Processing interrupted
+[2024-06-27 19:31] Prompt executed in 176.03 seconds
+[2024-06-27 19:32] got prompt
+[2024-06-27 19:32] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:32] python node runs
+[2024-06-27 19:32] Canva size: 2048x2048
+[2024-06-27 19:32] Image size: 1024x1024
+[2024-06-27 19:32] Scale factor: 2
+[2024-06-27 19:32] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:32] Tile size: 512x512
+[2024-06-27 19:32] Tiles amount: 16
+[2024-06-27 19:32] Grid: 4x4
+[2024-06-27 19:32] Redraw enabled: True
+[2024-06-27 19:32] Seams fix mode: NONE
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.55it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.33it/s]
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.46it/s]
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.37it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.36it/s]
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  4.58it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.62it/s]
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  4.51it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.43it/s]
+[2024-06-27 19:32] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.82it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.65it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.10it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.08it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.58it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.48it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  1.20it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.56it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  2.67it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.27it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.39it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.43it/s]
+[2024-06-27 19:33] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.89it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.75it/s]
+[2024-06-27 19:33] 
+[2024-06-27 19:33] Processing interrupted
+[2024-06-27 19:33] Prompt executed in 79.13 seconds
+[2024-06-27 19:34] got prompt
+[2024-06-27 19:34] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:34] python node runs
+[2024-06-27 19:34] Canva size: 2048x2048
+[2024-06-27 19:34] Image size: 1024x1024
+[2024-06-27 19:34] Scale factor: 2
+[2024-06-27 19:34] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:34] Tile size: 512x512
+[2024-06-27 19:34] Tiles amount: 16
+[2024-06-27 19:34] Grid: 4x4
+[2024-06-27 19:34] Redraw enabled: True
+[2024-06-27 19:34] Seams fix mode: NONE
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.53it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.33it/s]
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.39it/s]
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.38it/s]
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.37it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.26it/s]
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  3.97it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.56it/s]
+[2024-06-27 19:34] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  4.32it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.32it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.16it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.40it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.32it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.94it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.75it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.11it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.57it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.51it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.40it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.67it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.64it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.66it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.68it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.57it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.44it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.63it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.61it/s]
+[2024-06-27 19:35] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  4.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.56it/s]
+[2024-06-27 19:35] Prompt executed in 104.74 seconds
+[2024-06-27 19:36] got prompt
+[2024-06-27 19:36] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:36] python node runs
+[2024-06-27 19:36] Canva size: 1024x1024
+[2024-06-27 19:36] Image size: 512x512
+[2024-06-27 19:36] Scale factor: 2
+[2024-06-27 19:36] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:37] Tile size: 512x512
+[2024-06-27 19:37] Tiles amount: 4
+[2024-06-27 19:37] Grid: 2x2
+[2024-06-27 19:37] Redraw enabled: True
+[2024-06-27 19:37] Seams fix mode: NONE
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  4.22it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.31it/s]
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.87it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.81it/s]
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  5.07it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.98it/s]
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.87it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.99it/s]
+[2024-06-27 19:37] Prompt executed in 23.76 seconds
+[2024-06-27 19:37] got prompt
+[2024-06-27 19:37] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:37] python node runs
+[2024-06-27 19:37] Canva size: 1024x1024
+[2024-06-27 19:37] Image size: 512x512
+[2024-06-27 19:37] Scale factor: 2
+[2024-06-27 19:37] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:37] Tile size: 512x512
+[2024-06-27 19:37] Tiles amount: 4
+[2024-06-27 19:37] Grid: 2x2
+[2024-06-27 19:37] Redraw enabled: True
+[2024-06-27 19:37] Seams fix mode: NONE
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  3.91it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.02it/s]
+[2024-06-27 19:37] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.25it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.26it/s]
+[2024-06-27 19:38] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.70it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.52it/s]
+[2024-06-27 19:38] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.62it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.49it/s]
+[2024-06-27 19:38] Prompt executed in 26.91 seconds
+[2024-06-27 19:39] got prompt
+[2024-06-27 19:39] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-27 19:39] python node runs
+[2024-06-27 19:39] Canva size: 1024x1024
+[2024-06-27 19:39] Image size: 512x512
+[2024-06-27 19:39] Scale factor: 2
+[2024-06-27 19:39] Upscaling iteration 1 with scale factor 2
+[2024-06-27 19:39] Tile size: 512x512
+[2024-06-27 19:39] Tiles amount: 4
+[2024-06-27 19:39] Grid: 2x2
+[2024-06-27 19:39] Redraw enabled: True
+[2024-06-27 19:39] Seams fix mode: NONE
+[2024-06-27 19:39] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  1.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.13it/s]
+[2024-06-27 19:39] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  2.17it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.24it/s]
+[2024-06-27 19:39] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  3.83it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.12it/s]
+[2024-06-27 19:39] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.51it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.42it/s]
+[2024-06-27 19:39] Prompt executed in 28.07 seconds
+[2024-06-27 19:47] 
 Stopped server
