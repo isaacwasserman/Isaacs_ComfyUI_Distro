@@ -8,6 +8,7 @@ import folder_paths
 import time
 import glob
 import subprocess
+from pathlib import Path
 
 
 def execute_prestartup_script():
@@ -238,13 +239,21 @@ if __name__ == "__main__":
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
-        result = subprocess.run(
-            ["pip", "install", "-r", uninstalled_custom_node_repo_url.split("/")[-1] + "/requirements.txt"],
-            cwd="custom_nodes",
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-        )
-        print(result.stdout.decode("utf-8"), result.stderr.decode("utf-8"))
+    for repo_dir in glob.glob(os.path.join("custom_nodes", "*")):
+        if os.path.isdir(repo_dir) and not os.path.exists(os.path.join(repo_dir, ".deps_installed")) and os.path.exists(os.path.join(repo_dir, "requirements.txt")):
+            print(f"Installing dependencies for custom node repo: {repo_dir}")
+            result = subprocess.run(
+                ["pip", "install", "-r", os.path.join(repo_dir, "requirements.txt")],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            print(result.stdout.decode("utf-8"), result.stderr.decode("utf-8"))
+            Path(os.path.join(repo_dir, ".deps_installed")).touch()
+
+    # os.system("cat <(sort -u custom_nodes/*/requirements.txt) > custom_nodes/requirements.in")
+    # os.system("pip-compile custom_nodes/requirements.in")
+    # os.system("pip install --upgrade-strategy only-if-needed -r custom_nodes/requirements.txt")
+    # os.system("pip install --use-deprecated=legacy-resolver --upgrade-strategy only-if-needed -r <(sort -u custom_nodes/*/requirements.txt)")
 
     if args.temp_directory:
         temp_dir = os.path.join(os.path.abspath(args.temp_directory), "temp")
