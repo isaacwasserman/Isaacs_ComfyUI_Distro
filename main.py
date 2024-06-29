@@ -1,8 +1,15 @@
+import os
+import sys
+
+# Get the path of the current file
+current_file_path = os.path.abspath(__file__)
+requirements_file_path = os.path.join(os.path.dirname(current_file_path), "requirements.txt")
+os.system(f"pip install -r {requirements_file_path}")
+
 import comfy.options
 
 comfy.options.enable_args_parsing()
 
-import os
 import importlib.util
 import folder_paths
 import time

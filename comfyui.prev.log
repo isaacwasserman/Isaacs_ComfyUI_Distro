@@ -1,30 +1,410 @@
 ## ComfyUI-Manager: installing dependencies done.
-[2024-06-28 17:51] ** ComfyUI startup time: 2024-06-28 17:51:46.576645
-[2024-06-28 17:51] ** Platform: Linux
-[2024-06-28 17:51] ** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
-[2024-06-28 17:51] ** Python executable: /usr/bin/python
-[2024-06-28 17:51] ** ComfyUI Path: /workspace/Isaacs_ComfyUI_Distro/main.py
-[2024-06-28 17:51] ** Log path: /workspace/Isaacs_ComfyUI_Distro/comfyui.log
-[2024-06-28 17:51] 
+[2024-06-29 18:34] ** ComfyUI startup time: 2024-06-29 18:34:14.397761
+[2024-06-29 18:34] ** Platform: Linux
+[2024-06-29 18:34] ** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+[2024-06-29 18:34] ** Python executable: /usr/bin/python
+[2024-06-29 18:34] ** ComfyUI Path: /workspace/Isaacs_ComfyUI_Distro/main.py
+[2024-06-29 18:34] ** Log path: /workspace/Isaacs_ComfyUI_Distro/comfyui.log
+[2024-06-29 18:34] 
 Prestartup times for custom nodes:
-[2024-06-28 17:51]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
-[2024-06-28 17:51]    0.5 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
-[2024-06-28 17:51] 
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-29 18:34]    0.6 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-29 18:34] 
 Total VRAM 7974 MB, total RAM 257593 MB
-[2024-06-28 17:51] Set vram state to: NORMAL_VRAM
-[2024-06-28 17:51] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
-[2024-06-28 17:51] VAE dtype: torch.bfloat16
-[2024-06-28 17:51] Using pytorch cross attention
-[2024-06-28 17:51]  ERROR: Could not open requirements file: [Errno 20] Not a directory: 'custom_nodes/custom_node_repo_urls.txt/requirements.txt'
+[2024-06-29 18:34] Set vram state to: NORMAL_VRAM
+[2024-06-29 18:34] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-29 18:34] VAE dtype: torch.bfloat16
+[2024-06-29 18:34] Using pytorch cross attention
+[2024-06-29 18:34] Total VRAM 7974 MB, total RAM 257593 MB
+[2024-06-29 18:34] Set vram state to: NORMAL_VRAM
+[2024-06-29 18:34] Device: cuda:0 NVIDIA GeForce RTX 3070 : cudaMallocAsync
+[2024-06-29 18:34] VAE dtype: torch.bfloat16
+[2024-06-29 18:34] Traceback (most recent call last):
+  File "/workspace/Isaacs_ComfyUI_Distro/nodes.py", line 1864, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/Isaacs_ComfyUI_Distro/custom_nodes/Isaacs_ComfyUI_Distro/__init__.py'
 
-[notice] A new release of pip is available: 24.0 -> 24.1.1
-[notice] To update, run: python -m pip install --upgrade pip
-[2024-06-28 17:51] 
-[2024-06-28 17:51] Traceback (most recent call last):
-[2024-06-28 17:51]   File "/workspace/Isaacs_ComfyUI_Distro/main.py", line 251, in <module>
-[2024-06-28 17:51]     Path(os.path.join(repo_dir, ".deps_installed")).touch()
-[2024-06-28 17:51]   File "/usr/lib/python3.10/pathlib.py", line 1168, in touch
-[2024-06-28 17:51]     self._accessor.touch(self, mode, exist_ok)
-[2024-06-28 17:51]   File "/usr/lib/python3.10/pathlib.py", line 331, in touch
-[2024-06-28 17:51]     fd = os.open(path, flags, mode)
-[2024-06-28 17:51] NotADirectoryError: [Errno 20] Not a directory: 'custom_nodes/custom_node_repo_urls.txt/.deps_installed'
+[2024-06-29 18:34] Cannot import /workspace/Isaacs_ComfyUI_Distro/custom_nodes/Isaacs_ComfyUI_Distro module for custom nodes: [Errno 2] No such file or directory: '/workspace/Isaacs_ComfyUI_Distro/custom_nodes/Isaacs_ComfyUI_Distro/__init__.py'
+[2024-06-29 18:34] Adding /workspace/Isaacs_ComfyUI_Distro/custom_nodes to sys.path
+[2024-06-29 18:34] Could not find efficiency nodes
+[2024-06-29 18:34] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-29 18:34] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-29 18:34] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-29 18:34] /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-06-29 18:34] Loaded ControlNetPreprocessors nodes from /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-29 18:34] Could not find AdvancedControlNet nodes
+[2024-06-29 18:34] Could not find AnimateDiff nodes
+[2024-06-29 18:34] Loaded IPAdapter nodes from /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-29 18:34] Could not find VideoHelperSuite nodes
+[2024-06-29 18:34] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-29 18:34] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-06-29 18:34] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-29 18:34] Loaded ImpactPack nodes from /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-29 18:34] [Impact Pack] Wildcards loading done.
+[2024-06-29 18:34] [Impact Pack] Wildcards loading done.
+[2024-06-29 18:34] 
+[2024-06-29 18:34] [92m[rgthree] Loaded 40 magnificent nodes.[0m
+[2024-06-29 18:34] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-29 18:34] 
+[2024-06-29 18:34] [95m[ComfyUI-0️⃣ 2️⃣ 4️⃣ 6️⃣ ] Loaded all nodes and apis.[0m
+[2024-06-29 18:34] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-29 18:34] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/workspace/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-29 18:34] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-06-29 18:34] 
+	[3m[93m"Dream big and dare to fail."[0m[3m - Norman Vaughan[0m
+[2024-06-29 18:34] 
+[2024-06-29 18:34] Web extensions folder found at /workspace/Isaacs_ComfyUI_Distro/web/extensions/ComfyLiterals
+[2024-06-29 18:34] ### Loading: ComfyUI-Manager (V2.43)
+[2024-06-29 18:34] ### ComfyUI Revision: 2289 on 'main' [38b94c21] | Released on '2024-06-28'
+[2024-06-29 18:34] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-06-29 18:34] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-06-29 18:34] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-06-29 18:34] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-06-29 18:34] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-06-29 18:34] no module 'xformers'. Processing without...
+[2024-06-29 18:34] no module 'xformers'. Processing without...
+[2024-06-29 18:34] ### Loading: ComfyUI-Impact-Pack (V5.18.4)
+[2024-06-29 18:34] 
+Import times for custom nodes:
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/TinkerBot-tech-for-ComfyUI-Touchpad
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/websocket_image_save.py
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Logic
+[2024-06-29 18:34]    0.0 seconds (IMPORT FAILED): /workspace/Isaacs_ComfyUI_Distro/custom_nodes/Isaacs_ComfyUI_Distro
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfy-nodes
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_controlnet_aux
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/cg-use-everywhere
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyLiterals
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-fitsize
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-YOLO
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Shinsplat
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-IC-Light
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-various
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfy-pants
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-KJNodes
+[2024-06-29 18:34] [Impact Pack] Wildcards loading done.[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_UltimateSDUpscale
+
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/rgthree-comfy
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI_essentials
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-0246
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager
+[2024-06-29 18:34]    0.0 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui_segment_anything
+[2024-06-29 18:34]    0.7 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture
+[2024-06-29 18:34]    1.1 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-SUPIR
+[2024-06-29 18:34]    1.2 seconds: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/was-node-suite-comfyui
+[2024-06-29 18:34] 
+[2024-06-29 18:34] Starting server
+
+[2024-06-29 18:34] To see the GUI go to: http://127.0.0.1:8188
+[2024-06-29 18:34] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-06-29 18:35] got prompt
+[2024-06-29 18:35] Failed to validate prompt for output 127:
+[2024-06-29 18:35] * KSampler 161:
+[2024-06-29 18:35]   - Required input is missing: latent_image
+[2024-06-29 18:35] * UpscaleModelLoader 65:
+[2024-06-29 18:35]   - Value not in list: model_name: 'None' not in []
+[2024-06-29 18:35] Output will be ignored
+[2024-06-29 18:35] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:35] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
+[2024-06-29 18:35] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
+[2024-06-29 18:35] python node runs
+[2024-06-29 18:35] Downloading models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+[2024-06-29 18:35] Downloading models/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors
+[2024-06-29 18:36] Downloading models/ipadapter/ip-adapter_sd15.safetensors
+[2024-06-29 18:36] Downloading models/embeddings/UnrealisticDream.pt
+[2024-06-29 18:36] Downloading models/upscale_models/4x-Ultrasharp.pth
+[2024-06-29 18:36] Downloading models/controlnet/control_v11p_sd15_softedge.pth
+[2024-06-29 18:36] Downloading models/controlnet/control_v11p_sd15_canny.pth
+[2024-06-29 18:36] Downloading models/controlnet/control_v11p_sd15_inpaint.pth
+[2024-06-29 18:36] !!! Exception during processing !!!
+[2024-06-29 18:36] Traceback (most recent call last):
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-0246/utils.py", line 381, in new_func
+    res_value = old_func(*final_args, **kwargs)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/Isaacs_ComfyUI_Distro/comfy_extras/nodes_upscale_model.py", line 19, in load_model
+    model_path = folder_paths.get_full_path("upscale_models", model_name)
+  File "/workspace/Isaacs_ComfyUI_Distro/folder_paths.py", line 179, in get_full_path
+    filename = os.path.relpath(os.path.join("/", filename), "/")
+  File "/usr/lib/python3.10/posixpath.py", line 90, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/lib/python3.10/genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'
+
+[2024-06-29 18:36] Prompt executed in 98.68 seconds
+[2024-06-29 18:37] got prompt
+[2024-06-29 18:37] Failed to validate prompt for output 127:
+[2024-06-29 18:37] * UpscaleModelLoader 65:
+[2024-06-29 18:37]   - Value not in list: model_name: 'None' not in ['4x-Ultrasharp.pth']
+[2024-06-29 18:37] Output will be ignored
+[2024-06-29 18:37] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:37] python node runs
+[2024-06-29 18:37] !!! Exception during processing !!!
+[2024-06-29 18:37] Traceback (most recent call last):
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-0246/utils.py", line 381, in new_func
+    res_value = old_func(*final_args, **kwargs)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/Isaacs_ComfyUI_Distro/comfy_extras/nodes_upscale_model.py", line 19, in load_model
+    model_path = folder_paths.get_full_path("upscale_models", model_name)
+  File "/workspace/Isaacs_ComfyUI_Distro/folder_paths.py", line 179, in get_full_path
+    filename = os.path.relpath(os.path.join("/", filename), "/")
+  File "/usr/lib/python3.10/posixpath.py", line 90, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/lib/python3.10/genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'
+
+[2024-06-29 18:37] Prompt executed in 0.00 seconds
+[2024-06-29 18:37] [Impact Pack] Wildcards loading done.
+[2024-06-29 18:40] got prompt
+[2024-06-29 18:40] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:40] python node runs
+[2024-06-29 18:40] using extra model: /workspace/Isaacs_ComfyUI_Distro/models/sams/sam_vit_b_01ec64.pth
+[2024-06-29 18:40] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinT_OGC.cfg.py to /workspace/Isaacs_ComfyUI_Distro/models/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py
+[2024-06-29 18:40] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 0.98k/0.98k [00:00<00:00, 396kB/s]
+[2024-06-29 18:40] final text_encoder_type: bert-base-uncased
+[2024-06-29 18:40] downloading https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth to /workspace/Isaacs_ComfyUI_Distro/models/grounding-dino/groundingdino_swint_ogc.pth
+[2024-06-29 18:40] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 659M/662M [00:05<00:00, 117MB/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 662M/662M [00:05<00:00, 116MB/s]
+[2024-06-29 18:40] [1m[34m[CivitAI] [0mDownloading `realisticVisionV60B1_v51HyperInpaintVAE.safetensors` from `https://civitai.com/api/download/models/501286?token=cb1d2ff46eb35b2317b1d2f0f22e0393`
+[2024-06-29 18:41] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1.98G/1.99G [01:23<00:00, 17.4MB/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 1.98G/1.99G [01:23<00:00, 16.3MB/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌| 1.98G/1.99G [01:23<00:00, 16.3MB/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 1.98G/1.99G [01:23<00:00, 11.2MB/s]1.99GB [01:28, 24.0MB/s]                                                                                                                                                                              
+[2024-06-29 18:41] [1m[34m[CivitAI] [0mLoading Checkpoint: realisticVisionV60B1_v51HyperInpaintVAE.safetensors (https://civitai.com/models/4201/?modelVersionId=501286)
+[2024-06-29 18:41] [1m[34m[CivitAI] [0mCheckpoint SHA256: CB372C879506C865B000BAA3944CC8A4C7E8E3248D2150634989E9F9B6448AA4
+[2024-06-29 18:41] model_type EPS
+[2024-06-29 18:41] Using pytorch attention in VAE
+[2024-06-29 18:41] Using pytorch attention in VAE
+[2024-06-29 18:41] clip missing: ['clip_l.logit_scale', 'clip_l.transformer.text_projection.weight']
+[2024-06-29 18:41] Requested to load SD1ClipModel
+[2024-06-29 18:41] Loading 1 new model
+[2024-06-29 18:41] !!! Exception during processing !!!
+[2024-06-29 18:41] Traceback (most recent call last):
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-0246/utils.py", line 381, in new_func
+    res_value = old_func(*final_args, **kwargs)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 158, in load_image
+    images, masks = load_images_from_url(urls, keep_alpha_channel)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture/modules/utility_nodes.py", line 87, in load_images_from_url
+    i = Image.open(url)
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3277, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/Isaacs_ComfyUI_Distro/input/untitled.jpg'
+
+[2024-06-29 18:41] Prompt executed in 116.79 seconds
+[2024-06-29 18:45] got prompt
+[2024-06-29 18:45] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:45] python node runs
+[2024-06-29 18:45] Requested to load AutoencoderKL
+[2024-06-29 18:45] Loading 1 new model
+[2024-06-29 18:45] Requested to load BaseModel
+[2024-06-29 18:45] Loading 1 new model
+[2024-06-29 18:45] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 11.68it/s]
+[2024-06-29 18:45] Canva size: 1024x1024
+[2024-06-29 18:45] Image size: 512x512
+[2024-06-29 18:45] Scale factor: 2
+[2024-06-29 18:45] Upscaling iteration 1 with scale factor 2
+[2024-06-29 18:45] Tile size: 512x512
+[2024-06-29 18:45] Tiles amount: 4
+[2024-06-29 18:45] Grid: 2x2
+[2024-06-29 18:45] Redraw enabled: True
+[2024-06-29 18:45] Seams fix mode: NONE
+[2024-06-29 18:45] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.24it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.86it/s]
+[2024-06-29 18:45] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.23it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.13it/s]
+[2024-06-29 18:45] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.24it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.12it/s]
+[2024-06-29 18:45] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.23it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 10.12it/s]
+[2024-06-29 18:45] Prompt executed in 15.84 seconds
+[2024-06-29 18:46] got prompt
+[2024-06-29 18:46] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:46] python node runs
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.61it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.51it/s]
+[2024-06-29 18:46] Canva size: 1024x1024
+[2024-06-29 18:46] Image size: 512x512
+[2024-06-29 18:46] Scale factor: 2
+[2024-06-29 18:46] Upscaling iteration 1 with scale factor 2
+[2024-06-29 18:46] Tile size: 512x512
+[2024-06-29 18:46] Tiles amount: 4
+[2024-06-29 18:46] Grid: 2x2
+[2024-06-29 18:46] Redraw enabled: True
+[2024-06-29 18:46] Seams fix mode: NONE
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.11it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.88it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.09it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.87it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.10it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.86it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.11it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.85it/s]
+[2024-06-29 18:46] Prompt executed in 12.97 seconds
+[2024-06-29 18:46] got prompt
+[2024-06-29 18:46] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:46] python node runs
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.48it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.44it/s]
+[2024-06-29 18:46] Canva size: 1024x1024
+[2024-06-29 18:46] Image size: 512x512
+[2024-06-29 18:46] Scale factor: 2
+[2024-06-29 18:46] Upscaling iteration 1 with scale factor 2
+[2024-06-29 18:46] Tile size: 512x512
+[2024-06-29 18:46] Tiles amount: 4
+[2024-06-29 18:46] Grid: 2x2
+[2024-06-29 18:46] Redraw enabled: True
+[2024-06-29 18:46] Seams fix mode: NONE
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00, 10.07it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.77it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.99it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.80it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.96it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.71it/s]
+[2024-06-29 18:46] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.99it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:02<00:00,  9.73it/s]
+[2024-06-29 18:46] Prompt executed in 13.11 seconds
+[2024-06-29 18:46] got prompt
+[2024-06-29 18:46] Failed to validate prompt for output 127:
+[2024-06-29 18:46] * UltimateSDUpscale 84:
+[2024-06-29 18:46]   - Required input is missing: image
+[2024-06-29 18:46] Output will be ignored
+[2024-06-29 18:46] Failed to validate prompt for output 167:
+[2024-06-29 18:46] * KSampler 161:
+[2024-06-29 18:46]   - Value 3.0 bigger than max of 1.0: denoise
+[2024-06-29 18:46] Output will be ignored
+[2024-06-29 18:46] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:46] python node runs
+[2024-06-29 18:46] Prompt executed in 0.00 seconds
+[2024-06-29 18:46] got prompt
+[2024-06-29 18:46] Failed to validate prompt for output 127:
+[2024-06-29 18:46] * UltimateSDUpscale 84:
+[2024-06-29 18:46]   - Required input is missing: image
+[2024-06-29 18:46] Output will be ignored
+[2024-06-29 18:46] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:46] python node runs
+[2024-06-29 18:47] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.64it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.54it/s]
+[2024-06-29 18:47] Prompt executed in 1.75 seconds
+[2024-06-29 18:47] got prompt
+[2024-06-29 18:47] Failed to validate prompt for output 127:
+[2024-06-29 18:47] * UltimateSDUpscale 84:
+[2024-06-29 18:47]   - Required input is missing: image
+[2024-06-29 18:47] Output will be ignored
+[2024-06-29 18:47] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:47] python node runs
+[2024-06-29 18:47] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.56it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.46it/s]
+[2024-06-29 18:47] Prompt executed in 1.75 seconds
+[2024-06-29 18:47] got prompt
+[2024-06-29 18:47] Failed to validate prompt for output 127:
+[2024-06-29 18:47] * UltimateSDUpscale 84:
+[2024-06-29 18:47]   - Required input is missing: image
+[2024-06-29 18:47] Output will be ignored
+[2024-06-29 18:47] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:47] python node runs
+[2024-06-29 18:47] 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.44it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:01<00:00, 12.34it/s]
+[2024-06-29 18:47] Prompt executed in 1.77 seconds
+[2024-06-29 18:48] got prompt
+[2024-06-29 18:48] Failed to validate prompt for output 127:
+[2024-06-29 18:48] * UltimateSDUpscale 84:
+[2024-06-29 18:48]   - Required input is missing: image
+[2024-06-29 18:48] Output will be ignored
+[2024-06-29 18:48] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-06-29 18:48] python node runs
+[2024-06-29 18:48] !!! Exception during processing !!!
+[2024-06-29 18:48] Traceback (most recent call last):
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-0246/utils.py", line 381, in new_func
+    res_value = old_func(*final_args, **kwargs)
+  File "/workspace/Isaacs_ComfyUI_Distro/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture/modules/interrogate/danbooru.py", line 103, in caption
+    model = load_danbooru(device_mode)
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture/modules/interrogate/danbooru.py", line 26, in load_danbooru
+    if not os.path.exists(blip_dir) and not is_junction(blip_dir):
+  File "/workspace/Isaacs_ComfyUI_Distro/custom_nodes/comfyui-art-venture/modules/utils.py", line 142, in is_junction
+    child = subprocess.Popen('fsutil reparsepoint query "{}"'.format(src), stdout=subprocess.PIPE)
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'fsutil reparsepoint query "/workspace/Isaacs_ComfyUI_Distro/models/blip"'
+
+[2024-06-29 18:48] Prompt executed in 0.03 seconds
+[2024-06-29 18:51] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json [DONE]
+[2024-06-29 18:51] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json [DONE]
+[2024-06-29 18:51] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/.cache/746607195_github-stats.json [DONE]
+[2024-06-29 18:51] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/custom-node-list.json [DONE]
+[2024-06-29 18:51] FETCH DATA from: https://github.com/ltdrdata/ComfyUI-Manager/raw/main/custom-node-list.json/custom-node-list.json[ComfyUI-Manager] Due to a network error, switching to local mode.
+=> custom-node-list.json
+=> Expecting value: line 7 column 1 (char 6)
+[2024-06-29 18:51] FETCH DATA from: /workspace/Isaacs_ComfyUI_Distro/custom_nodes/ComfyUI-Manager/custom-node-list.json [DONE]
+[2024-06-29 18:51] Install custom node 'img2txt-comfyui-nodes'
+[2024-06-29 18:51] Install: ['https://github.com/christian-byrne/img2txt-comfyui-nodes']
+[2024-06-29 18:51] Download: git clone 'https://github.com/christian-byrne/img2txt-comfyui-nodes'
+[2024-06-29 18:51] 0it [00:00, ?it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 149.0/149.0 [00:00<00:00, 301.32it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 149.0/149.0 [00:00<00:00, 301.23it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92.0/92.0 [00:00<00:00, 182.65it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92.0/92.0 [00:00<00:00, 182.60it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 149.0/149.0 [00:00<00:00, 231.19it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 149.0/149.0 [00:00<00:00, 231.12it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 82.0/82.0 [00:00<00:00, 108.52it/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 82.0/82.0 [00:00<00:00, 108.49it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 82.0/82.0 [00:00<00:00, 88.84it/s]
+[2024-06-29 18:51] Install: pip packages
+[2024-06-29 18:51] 
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'transformers>=4.36.0']
+[2024-06-29 18:51]                  [2024-06-29 18:51] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-06-29 18:51] [!] 
+[2024-06-29 18:51] [!] [notice] A new release of pip is available: 24.0 -> 24.1.1
+[2024-06-29 18:51] [!] [notice] To update, run: python -m pip install --upgrade pip
+[2024-06-29 18:51] 
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'bitsandbytes>=0.43.0']
+[2024-06-29 18:51]  Collecting bitsandbytes>=0.43.0
+[2024-06-29 18:51]    Downloading bitsandbytes-0.43.1-py3-none-manylinux_2_24_x86_64.whl.metadata (2.2 kB)
+[2024-06-29 18:51]                         Downloading bitsandbytes-0.43.1-py3-none-manylinux_2_24_x86_64.whl (119.8 MB)
+[2024-06-29 18:51]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.8/119.8 MB 59.7 MB/s eta 0:00:00
+[2024-06-29 18:51]  Installing collected packages: bitsandbytes
+[2024-06-29 18:51]  Successfully installed bitsandbytes-0.43.1
+[2024-06-29 18:51] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-06-29 18:51] [!] 
+[2024-06-29 18:51] [!] [notice] A new release of pip is available: 24.0 -> 24.1.1
+[2024-06-29 18:51] [!] [notice] To update, run: python -m pip install --upgrade pip
+[2024-06-29 18:51] 
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'timm==0.9.10']
+[2024-06-29 18:51]  Collecting timm==0.9.10
+[2024-06-29 18:51]    Downloading timm-0.9.10-py3-none-any.whl.metadata (59 kB)
+[2024-06-29 18:51]       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.8/59.8 kB 1.7 MB/s eta 0:00:00
+[2024-06-29 18:51]                                     Downloading timm-0.9.10-py3-none-any.whl (2.2 MB)
+[2024-06-29 18:51]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 42.6 MB/s eta 0:00:00
+[2024-06-29 18:51]  Installing collected packages: timm
+[2024-06-29 18:51]    Attempting uninstall: timm
+[2024-06-29 18:51]      Found existing installation: timm 0.6.13
+[2024-06-29 18:51]      Uninstalling timm-0.6.13:
+[2024-06-29 18:51]        Successfully uninstalled timm-0.6.13
+[2024-06-29 18:51]  Successfully installed timm-0.9.10
+[2024-06-29 18:51] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-06-29 18:51] [!] 
+[2024-06-29 18:51] [!] [notice] A new release of pip is available: 24.0 -> 24.1.1
+[2024-06-29 18:51] [!] [notice] To update, run: python -m pip install --upgrade pip
+[2024-06-29 18:51] 
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'sentencepiece==0.1.99']
+[2024-06-29 18:51]  Collecting sentencepiece==0.1.99
+[2024-06-29 18:51]    Downloading sentencepiece-0.1.99-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+[2024-06-29 18:51]  Downloading sentencepiece-0.1.99-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+[2024-06-29 18:51]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 10.7 MB/s eta 0:00:00
+[2024-06-29 18:51]  Installing collected packages: sentencepiece
+[2024-06-29 18:51]    Attempting uninstall: sentencepiece
+[2024-06-29 18:51]      Found existing installation: sentencepiece 0.2.0
+[2024-06-29 18:51]      Uninstalling sentencepiece-0.2.0:
+[2024-06-29 18:51]        Successfully uninstalled sentencepiece-0.2.0
+[2024-06-29 18:51]  Successfully installed sentencepiece-0.1.99
+[2024-06-29 18:51] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-06-29 18:51] [!] 
+[2024-06-29 18:51] [!] [notice] A new release of pip is available: 24.0 -> 24.1.1
+[2024-06-29 18:51] [!] [notice] To update, run: python -m pip install --upgrade pip
+[2024-06-29 18:51] 
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'accelerate>=0.3.0']
+[2024-06-29 18:51]                                    [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-06-29 18:51] [!] 
+[2024-06-29 18:51] [!] [notice] A new release of pip is available: 24.0 -> 24.1.1
+[2024-06-29 18:51] [!] [notice] To update, run: python -m pip install --upgrade pip
+[2024-06-29 18:51] Installation was successful.
+[2024-06-29 18:51] After restarting ComfyUI, please refresh the browser.
