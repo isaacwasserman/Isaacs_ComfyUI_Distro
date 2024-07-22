@@ -43,7 +43,7 @@ pip install -r requirements.txt
 sed -i 's/^import manager_core as core/from . import manager_core as core/' custom_nodes/ComfyUI-Manager/glob/manager_server.py
 
 # Add lines after if __name__ == "__main__": in main.py
-sed -i '/if __name__ == "__main__":/a import os\nos.system("python install_models.py")' main.py
+sed -i '/if __name__ == "__main__":/a     import os\n    os.system("python install_models.py")' main.py
 
 # Return to the original directory
 cd "$original_dir" || exit
