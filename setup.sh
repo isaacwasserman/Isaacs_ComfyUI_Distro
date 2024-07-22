@@ -42,7 +42,7 @@ done < "custom_node_repo_urls.txt"
 pip install -r requirements.txt
 
 # Modify the import statement in manager_server.py
-sed -i '.bak' 's/^import manager_core as core/from . import manager_core as core/' custom_nodes/ComfyUI-Manager/glob/manager_server.py
+sed -i.bak '/^import manager_core as core$/s|^import manager_core as core|from . import manager_core as core|' custom_nodes/ComfyUI-Manager/glob/manager_server.py
 
 # Check in main.py contains the string "install_models.py", if not, append it
 if grep -q "# install_models.py" main.py; then
