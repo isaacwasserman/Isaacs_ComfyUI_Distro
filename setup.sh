@@ -1,20 +1,23 @@
 # mv all files that start with .git to .git_distro
 
-mv .git .git_distro
-mv .github .github_distro
-mv .gitignore .gitignore_distro
+# Get absolute path to this script
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-git clone https://github.com/comfyanonymous/ComfyUI
-mv ComfyUI/* .
-rm -rf ComfyUI
+mv $SCRIPT_DIR/.git $SCRIPT_DIR/.git_distro
+mv $SCRIPT_DIR/.github $SCRIPT_DIR/.github_distro
+mv $SCRIPT_DIR/.gitignore $SCRIPT_DIR/.gitignore_distro
 
-rm -rf .git*
+git clone https://github.com/comfyanonymous/ComfyUI $SCRIPT_DIR/ComfyUI
+mv $SCRIPT_DIR/ComfyUI/* $SCRIPT_DIR/
+rm -rf $SCRIPT_DIR/ComfyUI
 
-mv .git_distro .git
-mv .github_distro .github
-mv .gitignore_distro .gitignore
+rm -rf $SCRIPT_DIR/.git*
 
-target_dir="custom_nodes"
+mv $SCRIPT_DIR/.git_distro $SCRIPT_DIR/.git
+mv $SCRIPT_DIR/.github_distro $SCRIPT_DIR/.github
+mv $SCRIPT_DIR/.gitignore_distro $SCRIPT_DIR/.gitignore
+
+target_dir="$SCRIPT_DIR/custom_nodes"
 while IFS= read -r repo_url; do
     if [ ! -z "$repo_url" ]; then
         repo_name=$(basename "$repo_url" .git)
@@ -22,11 +25,15 @@ while IFS= read -r repo_url; do
         echo "Cloning $repo_url into $repo_target_dir"
         git clone "$repo_url" "$repo_target_dir" --recursive
     fi
-done < "custom_node_repo_urls.txt"
+done < "$SCRIPT_DIR/custom_node_repo_urls.txt"
 
-pip install -r requirements.txt
+pip install -r $SCRIPT_DIR/requirements.txt
 
 # Replace line "import manager_core as core" in custom_nodes/ComfyUI-Manager/glob/manager_server.py with "from . import manager_core as core"
-sed -i 's/^import manager_core as core/from . import manager_core as core/' custom_nodes/ComfyUI-Manager/glob/manager_server.py
+sed -i 's/^import manager_core as core/from . import manager_core as core/' $SCRIPT_DIR/custom_nodes/ComfyUI-Manager/glob/manager_server.py
 
-python install_models.py
+# After the line if __name__ == "__main__": in main.py, add the following lines:
+# import os
+# os.system("python install_models.py")
+
+sed -i '/if __name__ == "__main__":/a import os\nos.system("python install_models.py")' $SCRIPT_DIR/main.py
