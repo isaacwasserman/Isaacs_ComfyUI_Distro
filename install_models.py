@@ -1,3 +1,5 @@
+# install_models.py
+# _________________
 import urllib.request
 import os
 import json
@@ -13,3 +15,4 @@ for destination, url in downloads.items():
         directory = "/".join(destination.split("/")[:-1])
         os.makedirs(directory, exist_ok=True)
         urllib.request.urlretrieve(url, destination)
+# _________________
