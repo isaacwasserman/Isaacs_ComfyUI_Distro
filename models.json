@@ -1,0 +1,15 @@
+{
+    "models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors",
+    "models/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors": "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors",
+    "models/ipadapter/ip-adapter_sd15.safetensors": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors",
+    "models/ipadapter/ip-adapter-plus_sd15.safetensors": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors?download=true",
+    "models/embeddings/UnrealisticDream.pt": "https://huggingface.co/klnaD/negative_embeddings/resolve/main/BadDream.pt?download=true",
+    "models/upscale_models/4x-Ultrasharp.pth": "https://huggingface.co/lokCX/4x-Ultrasharp/resolve/main/4x-UltraSharp.pth?download=true",
+    "models/controlnet/control_v11p_sd15_softedge.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth?download=true",
+    "models/controlnet/control_v11p_sd15_canny.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth?download=true",
+    "models/controlnet/control_v11p_sd15_inpaint.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth?download=true",
+    "models/controlnet/control_v11p_sd15_seg.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.pth?download=true",
+    "models/controlnet/control_v11p_sd15_openpose.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth?download=true",
+    "models/controlnet/control_v11p_sd15_depth.pth": "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth?download=true",
+    "models/unet/iclight_sd15_fc.safetensors": "https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors?download=true"
+}
